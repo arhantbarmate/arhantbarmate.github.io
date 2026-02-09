@@ -1,40 +1,5 @@
 # Arhant Barmate - Professional Founder Page
 
-## 📋 Table of Contents
-
-- [What's New in v2.0](#whats-new-in-v20)
-- [Features Overview](#features-overview)
-- [Quick Start Guide](#quick-start-guide)
-- [SEO Optimization](#seo-optimization)
-- [Customization Guide](#customization-guide)
-- [Deployment Instructions](#deployment-instructions)
-- [Performance Metrics](#performance-metrics)
-- [Troubleshooting](#troubleshooting)
-
----
-
-## 🎉 What's New in v2.0
-
-### ✅ Fixed Issues
-- **Removed broken gradient animation** on name (was causing visual distortion)
-- **Optimized all animations** for better performance
-- **Fixed mobile responsiveness** issues
-- **Enhanced accessibility** features
-
-### 🚀 New Features
-- **Enhanced SEO** with 20+ meta tags and advanced structured data
-- **Better geo-targeting** with precise ICBM coordinates
-- **Improved design** with glassmorphism and smooth animations
-- **Performance optimizations** for <1.5s load time
-- **Advanced JSON-LD** schemas (Person + WebSite)
-- **Custom scrollbar** styling
-- **Animated gradient background** (subtle, professional)
-- **Button ripple effects** for modern UX
-- **Loading animations** with fade-in
-- **Enhanced accessibility** with WCAG 2.1 AA compliance
-
----
-
 ## 🎯 Features Overview
 
 ### 🎨 Design Highlights
