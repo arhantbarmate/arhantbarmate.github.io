@@ -1,10 +1,4 @@
 # Arhant Barmate - Professional Founder Page
-## 🚀 Production-Ready GitHub Pages Portfolio
-
-**Live Preview:** Modern, SEO-optimized founder page for GitHub Pages  
-**Status:** ✅ Production-Ready (v2.0)  
-**Theme:** Enhanced GitHub Dark + Professional Gradient Design  
-**Performance:** <1.5s Load Time | 95+ Lighthouse Score
 
 ---
 
