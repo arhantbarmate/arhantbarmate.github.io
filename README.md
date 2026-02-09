@@ -1,5 +1,4 @@
 # Arhant Barmate - Professional Founder Page
----
 
 ## 📋 Table of Contents
 
