@@ -31,7 +31,7 @@ Infrastructure engineer specializing in Rust, blockchain protocols, and embedded
 
 - 🔧 [GitHub](https://github.com/arhantbarmate)
 - 💼 [LinkedIn](https://www.linkedin.com/in/arhant-barmate-5710163aa/)
-- 🐦 [Twitter](https://twitter.com/arhantofficial)
+- 🐦 [Twitter](https://x.com/Arhant_Dev)
 - ✉️ [Email](mailto:infrastructure@orthonode.xyz)
 - 🏢 [Orthonode Labs](https://orthonode.xyz)
 
