@@ -2,59 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-   
+
+   <!-- ============================================================ -->
+   <!-- Arhant Barmate — Personal Portfolio Sitemap                  -->
+   <!-- https://arhantbarmate.github.io                              -->
+   <!-- Last updated: 2026-02-18                                     -->
+   <!-- ============================================================ -->
+
    <!-- Personal Homepage -->
    <url>
       <loc>https://arhantbarmate.github.io/</loc>
-      <lastmod>2026-02-09</lastmod>
+      <lastmod>2026-02-18</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
       <image:image>
          <image:loc>https://github.com/arhantbarmate.png</image:loc>
-         <image:title>Arhant Barmate - Infrastructure Engineer Profile Photo</image:title>
-         <image:caption>Founder of Orthonode Labs, blockchain infrastructure engineer</image:caption>
+         <image:title>Arhant Barmate — Founder & Infrastructure Engineer, Orthonode Labs</image:title>
+         <image:caption>Founder of Orthonode Infrastructure Labs. Creator of SHA (Stylus Hardware Anchor), OAP, and Nexus Protocol. Building deterministic physical verification for DePIN.</image:caption>
       </image:image>
       <image:image>
          <image:loc>https://arhantbarmate.github.io/og-image.png</image:loc>
-         <image:title>Arhant Barmate - Open Graph Card</image:title>
+         <image:title>Arhant Barmate — Open Graph Card</image:title>
       </image:image>
       <image:image>
          <image:loc>https://arhantbarmate.github.io/twitter-card.png</image:loc>
-         <image:title>Arhant Barmate - Twitter Card</image:title>
+         <image:title>Arhant Barmate — Twitter Card</image:title>
       </image:image>
    </url>
 
-   <!-- External Professional Profiles (Important for Personal Branding SEO) -->
-   <!-- Company Website -->
+   <!-- Site Index (Portfolio Directory) -->
+   <url>
+      <loc>https://arhantbarmate.github.io/site-index.html</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Company Website — Orthonode Labs -->
    <url>
       <loc>https://orthonode.xyz/</loc>
-      <lastmod>2026-02-09</lastmod>
+      <lastmod>2026-02-18</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
+   </url>
+
+   <!-- SHA Product Page -->
+   <url>
+      <loc>https://orthonode.xyz/sha.html</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.85</priority>
+   </url>
+
+   <!-- OAP Product Page -->
+   <url>
+      <loc>https://orthonode.xyz/oap.html</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.75</priority>
+   </url>
+
+   <!-- Nexus Product Page -->
+   <url>
+      <loc>https://orthonode.xyz/nexus.html</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.75</priority>
    </url>
 
    <!-- GitHub Profile -->
    <url>
       <loc>https://github.com/arhantbarmate</loc>
-      <lastmod>2026-02-09</lastmod>
-      <changefreq>daily</changefreq>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
+   </url>
+
+   <!-- SHA Repository -->
+   <url>
+      <loc>https://github.com/arhantbarmate/stylus-hardware-anchor</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Nexus Repository -->
+   <url>
+      <loc>https://github.com/arhantbarmate/nexus-core</loc>
+      <lastmod>2026-02-18</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.75</priority>
    </url>
 
    <!-- LinkedIn Profile -->
    <url>
       <loc>https://www.linkedin.com/in/arhant-barmate-5710163aa/</loc>
-      <lastmod>2026-02-01</lastmod>
+      <lastmod>2026-02-18</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-
-   <!-- Primary Project Repository -->
-   <url>
-      <loc>https://github.com/orthonode/Stylus-Hardware-Anchor</loc>
-      <lastmod>2026-02-09</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.8</priority>
+      <priority>0.7</priority>
    </url>
 
 </urlset>
