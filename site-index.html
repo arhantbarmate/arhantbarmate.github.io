@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Index | Arhant Barmate</title>
+    <meta name="description" content="Complete directory of Arhant Barmate's personal portfolio — projects, protocols, social profiles, and external resources.">
+    <link rel="canonical" href="https://arhantbarmate.github.io/site-index.html">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="https://github.com/arhantbarmate.png">
+    <meta name="theme-color" content="#060608">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #060608;
+            --bg-2: #0c0c10;
+            --bg-3: #121218;
+            --bg-4: #1a1a22;
+            --line: #1e1e28;
+            --line-2: #2a2a36;
+            --line-3: #38384a;
+            --ink: #f0f0f4;
+            --ink-2: #c8c8d4;
+            --ink-3: #8888a0;
+            --ink-4: #505068;
+            --ink-5: #32323e;
+            --blue: #28a0f0;
+            --blue-glow: rgba(40,160,240,0.2);
+            --amber: #fbbf24;
+            --green: #00d084;
+            --green-glow: rgba(0,208,132,0.15);
+            --display: 'Syne', sans-serif;
+            --mono: 'DM Mono', monospace;
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+        html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;}
+        body{background:var(--bg);color:var(--ink-2);font-family:var(--mono);font-size:14px;line-height:1.6;overflow-x:hidden;}
+        body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,0.006) 2px,rgba(255,255,255,0.006) 4px);pointer-events:none;z-index:0;}
+        ::selection{background:var(--blue-glow);color:var(--ink);}
+        a{color:inherit;text-decoration:none;transition:color 0.15s;}
+        ::-webkit-scrollbar{width:5px;} ::-webkit-scrollbar-track{background:var(--bg);} ::-webkit-scrollbar-thumb{background:var(--line-3);border-radius:3px;}
+
+        .topbar{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(6,6,8,0.88);border-bottom:1px solid var(--line);padding:.65rem 2rem;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.7rem;color:var(--ink-4);}
+        .topbar-left{display:flex;align-items:center;gap:.75rem;}
+        .live-dot{width:5px;height:5px;background:var(--green);border-radius:50%;box-shadow:0 0 6px var(--green-glow);animation:blink 2.5s ease-in-out infinite;flex-shrink:0;}
+        @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+        .topbar-right{display:flex;gap:1.5rem;}
+        .topbar-right a:hover{color:var(--blue);}
+
+        .wrap{max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;z-index:1;}
+
+        .page-hero{padding:7rem 0 3rem;}
+        .hero-tag{font-family:var(--mono);font-size:.7rem;color:var(--ink-4);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem;}
+        .hero-tag::before{content:'';display:block;width:20px;height:1px;background:var(--ink-4);}
+        .page-title{font-family:var(--display);font-size:clamp(2rem,5vw,3rem);font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-bottom:.5rem;}
+        .page-sub{font-size:.8rem;color:var(--ink-4);margin-bottom:3rem;}
+
+        .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:4rem;}
+        .sum-item{background:var(--bg-2);padding:1.25rem 1.5rem;}
+        .sum-val{font-family:var(--display);font-size:1.5rem;font-weight:800;color:var(--ink);line-height:1;margin-bottom:.25rem;}
+        .sum-label{font-family:var(--mono);font-size:.65rem;color:var(--ink-4);text-transform:uppercase;letter-spacing:.07em;}
+
+        .index-group{margin-bottom:4rem;}
+        .group-head{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;font-family:var(--mono);font-size:.72rem;color:var(--ink-4);text-transform:uppercase;letter-spacing:.1em;padding-bottom:.75rem;border-bottom:1px solid var(--line);}
+        .group-count{margin-left:auto;color:var(--ink-5);}
+
+        .idx-list{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+
+        .idx-row{background:var(--bg-2);display:grid;grid-template-columns:240px 1fr 140px;transition:background .15s;}
+        .idx-row:hover{background:var(--bg-3);}
+        .idx-path-col{padding:1.1rem 1.5rem;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;gap:.3rem;}
+        .idx-path{font-family:var(--mono);font-size:.75rem;word-break:break-all;line-height:1.4;}
+        .idx-path.blue{color:var(--blue);}
+        .idx-path.green{color:var(--green);}
+        .idx-path.amber{color:var(--amber);}
+        .idx-path.dim{color:var(--ink-3);}
+        .idx-type{font-family:var(--mono);font-size:.62rem;color:var(--ink-5);text-transform:uppercase;letter-spacing:.07em;}
+        .idx-body-col{padding:1.1rem 1.5rem;display:flex;flex-direction:column;justify-content:center;gap:.3rem;}
+        .idx-title{font-family:var(--display);font-size:.9rem;font-weight:700;color:var(--ink);}
+        .idx-desc{font-size:.78rem;color:var(--ink-3);line-height:1.5;}
+        .idx-meta-col{padding:1.1rem 1.25rem;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:.35rem;}
+        .idx-badge{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;padding:.2rem .55rem;border-radius:3px;background:var(--bg-4);border:1px solid var(--line-2);white-space:nowrap;}
+        .idx-badge.live{color:var(--blue);border-color:rgba(40,160,240,.3);}
+        .idx-badge.active{color:var(--green);border-color:rgba(0,208,132,.3);}
+        .idx-badge.dev{color:var(--amber);border-color:rgba(251,191,36,.3);}
+        .idx-badge.ext{color:var(--ink-3);border-color:var(--line-2);}
+        .idx-badge.legal{color:var(--ink-4);border-color:var(--line);}
+        .idx-mod{font-family:var(--mono);font-size:.62rem;color:var(--ink-5);}
+
+        footer{margin-top:6rem;padding:2rem 0;border-top:1px solid var(--line);}
+        .foot-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-family:var(--mono);font-size:.7rem;color:var(--ink-5);}
+        .foot-right{display:flex;gap:1.5rem;}
+        .foot-right a:hover{color:var(--blue);}
+
+        @media(max-width:900px){.idx-row{grid-template-columns:180px 1fr;}.idx-meta-col{display:none;}}
+        @media(max-width:640px){.wrap{padding:0 1.25rem;}.idx-row{grid-template-columns:1fr;}.idx-path-col{border-right:none;border-bottom:1px solid var(--line);}.topbar-right{display:none;}.summary{grid-template-columns:repeat(2,1fr);}}
+    </style>
+</head>
+<body>
+
+<nav class="topbar">
+    <div class="topbar-left">
+        <span class="live-dot"></span>
+        <span>ARHANTBARMATE.GITHUB.IO / SITE-INDEX</span>
+    </div>
+    <div class="topbar-right">
+        <a href="/">← Back to Portfolio</a>
+        <a href="https://orthonode.xyz" target="_blank" rel="noopener">orthonode.xyz ↗</a>
+    </div>
+</nav>
+
+<div class="wrap">
+
+    <div class="page-hero">
+        <div class="hero-tag">Portfolio Directory</div>
+        <h1 class="page-title">Site Index</h1>
+        <p class="page-sub">// Complete directory · all pages, repositories, profiles, and external resources · last updated 2026-02-18</p>
+    </div>
+
+    <div class="summary">
+        <div class="sum-item"><div class="sum-val">2</div><div class="sum-label">Site Pages</div></div>
+        <div class="sum-item"><div class="sum-val">3</div><div class="sum-label">Protocols</div></div>
+        <div class="sum-item"><div class="sum-val">3</div><div class="sum-label">Repositories</div></div>
+        <div class="sum-item"><div class="sum-val">5</div><div class="sum-label">Social Profiles</div></div>
+        <div class="sum-item"><div class="sum-val">2026-02-18</div><div class="sum-label">Updated</div></div>
+    </div>
+
+    <!-- Pages -->
+    <div class="index-group">
+        <div class="group-head">// Personal Portfolio Pages <span class="group-count">2 pages</span></div>
+        <div class="idx-list">
+            <a href="/" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">arhantbarmate.github.io/</div><div class="idx-type">Homepage</div></div>
+                <div class="idx-body-col"><div class="idx-title">Arhant Barmate — Portfolio</div><div class="idx-desc">Main personal portfolio. Full intro, terminal status log, accurate project metrics, all three Orthonode protocols, tech stack, and connect links.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">Live</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+            <a href="/site-index.html" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">arhantbarmate.github.io/site-index.html</div><div class="idx-type">Directory</div></div>
+                <div class="idx-body-col"><div class="idx-title">Site Index (This Page)</div><div class="idx-desc">Complete directory of all personal portfolio pages, repositories, and profiles.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">Live</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Orthonode Products -->
+    <div class="index-group">
+        <div class="group-head">// Orthonode Infrastructure Labs — Product Pages <span class="group-count">5 pages</span></div>
+        <div class="idx-list">
+            <a href="https://orthonode.xyz/" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">orthonode.xyz/</div><div class="idx-type">Company Homepage</div></div>
+                <div class="idx-body-col"><div class="idx-title">Orthonode Infrastructure Labs</div><div class="idx-desc">Multi-product homepage — SHA, OAP, Nexus overview, doctrine, on-chain SHA metrics, application domains.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">Live ↗</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+            <a href="https://orthonode.xyz/sha.html" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">orthonode.xyz/sha.html</div><div class="idx-type">Product · SHA</div></div>
+                <div class="idx-body-col"><div class="idx-title">SHA — Stylus Hardware Anchor</div><div class="idx-desc">Full protocol documentation — architecture, gas benchmarks, grant roadmap, on-chain evidence. Testnet live on Arbitrum Sepolia.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">Testnet ↗</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+            <a href="https://orthonode.xyz/oap.html" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path amber">orthonode.xyz/oap.html</div><div class="idx-type">Product · OAP</div></div>
+                <div class="idx-body-col"><div class="idx-title">OAP — Integrity Governance Engine</div><div class="idx-desc">Deterministic motion validation and lifecycle trust governance. Architecture published, product in development.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge dev">In Dev ↗</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+            <a href="https://orthonode.xyz/nexus.html" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path green">orthonode.xyz/nexus.html</div><div class="idx-type">Product · Nexus</div></div>
+                <div class="idx-body-col"><div class="idx-title">Nexus Protocol — Sovereign Edge Gateway</div><div class="idx-desc">Zero-trust edge execution layer. Phase 1.4.0 active. Threat model, architecture, roadmap, governance all documented.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge active">Phase 1.4 ↗</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+            <a href="https://orthonode.xyz/site-index.html" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">orthonode.xyz/site-index.html</div><div class="idx-type">Directory</div></div>
+                <div class="idx-body-col"><div class="idx-title">Orthonode Site Index</div><div class="idx-desc">Complete directory of all Orthonode pages, on-chain evidence, and external resources.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">Directory ↗</span><span class="idx-mod">2026-02-18</span></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Repositories -->
+    <div class="index-group">
+        <div class="group-head">// GitHub Repositories <span class="group-count">3 repos</span></div>
+        <div class="idx-list">
+            <a href="https://github.com/arhantbarmate/stylus-hardware-anchor" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">github.com/arhantbarmate/<br>stylus-hardware-anchor</div><div class="idx-type">SHA Repository</div></div>
+                <div class="idx-body-col"><div class="idx-title">SHA — Stylus Hardware Anchor Source</div><div class="idx-desc">Rust/WASM Stylus contract, ESP32-S3 firmware, Python SDK (anchor-verifier), BENCHMARKS.md. MIT License. v1.0.0 tagged.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">MIT ↗</span><span class="idx-mod">Active</span></div>
+            </a>
+            <a href="https://github.com/arhantbarmate/nexus-core" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path green">github.com/arhantbarmate/<br>nexus-core</div><div class="idx-type">Nexus Repository</div></div>
+                <div class="idx-body-col"><div class="idx-title">Nexus Protocol — Source</div><div class="idx-desc">Sovereign edge gateway. Hivemapper Bee Runtime, ARCHITECTURE.md, THREAT_MODEL.md, GOVERNANCE.md, ROADMAP.md. Phase 1.4.0. Apache 2.0.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge active">Apache ↗</span><span class="idx-mod">Active</span></div>
+            </a>
+            <a href="https://github.com/orthonode" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">github.com/orthonode</div><div class="idx-type">Organisation</div></div>
+                <div class="idx-body-col"><div class="idx-title">Orthonode — GitHub Organisation</div><div class="idx-desc">Orthonode Infrastructure Labs org profile. Brand assets, organisation-level documentation, supplementary repos.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">Org ↗</span><span class="idx-mod">—</span></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Social Profiles -->
+    <div class="index-group">
+        <div class="group-head">// Social & Professional Profiles <span class="group-count">5 profiles</span></div>
+        <div class="idx-list">
+            <a href="https://github.com/arhantbarmate" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">github.com/arhantbarmate</div><div class="idx-type">Code · Open Source</div></div>
+                <div class="idx-body-col"><div class="idx-title">GitHub — arhantbarmate</div><div class="idx-desc">Personal GitHub. SHA, Nexus Protocol, and all open-source engineering work.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">↗</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/arhant-barmate-5710163aa/" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">linkedin.com/in/arhant-barmate</div><div class="idx-type">Professional</div></div>
+                <div class="idx-body-col"><div class="idx-title">LinkedIn — Arhant Barmate</div><div class="idx-desc">Professional background, engineering work, and career history.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">↗</span></div>
+            </a>
+            <a href="https://x.com/Arhant_Dev" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">x.com/Arhant_Dev</div><div class="idx-type">Social · Technical</div></div>
+                <div class="idx-body-col"><div class="idx-title">X / Twitter — @Arhant_Dev</div><div class="idx-desc">Personal technical updates, ecosystem discussions.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">↗</span></div>
+            </a>
+            <a href="https://instagram.com/arhantofficial/" target="_blank" rel="noopener" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path dim">instagram.com/arhantofficial</div><div class="idx-type">Social · Personal</div></div>
+                <div class="idx-body-col"><div class="idx-title">Instagram — @arhantofficial</div><div class="idx-desc">Personal profile.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge ext">↗</span></div>
+            </a>
+            <a href="mailto:infrastructure@orthonode.xyz" class="idx-row">
+                <div class="idx-path-col"><div class="idx-path blue">infrastructure@orthonode.xyz</div><div class="idx-type">Direct Contact</div></div>
+                <div class="idx-body-col"><div class="idx-title">Email — Direct</div><div class="idx-desc">Collaboration, technical briefs, integration inquiries, grant/partnership discussion.</div></div>
+                <div class="idx-meta-col"><span class="idx-badge live">Contact</span></div>
+            </a>
+        </div>
+    </div>
+
+</div><!-- /wrap -->
+
+<footer>
+    <div class="wrap">
+        <div class="foot-inner">
+            <span>© 2026 Arhant Barmate · Bhopal, Madhya Pradesh, India</span>
+            <div class="foot-right">
+                <a href="/">Portfolio</a>
+                <a href="https://orthonode.xyz" target="_blank" rel="noopener">Orthonode Labs ↗</a>
+                <a href="/sitemap.xml">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
