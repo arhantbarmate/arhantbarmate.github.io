@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check for incorrect grant amount ($49,000)
+      - name: Check for incorrect grant amount
         run: |
-          if grep -r "\$49,000\|49000" --include="*.html" --include="*.md" . 2>/dev/null | grep -v ".git"; then
-            echo "ERROR: $49,000 found — SHA grant is $25,000"
+          if git ls-files -- '*.html' '*.md' | xargs grep -l "\$49,000\|49000" 2>/dev/null; then
+            echo "ERROR: wrong grant amount in tracked source — SHA grant is $25,000"
             exit 1
           fi
 
