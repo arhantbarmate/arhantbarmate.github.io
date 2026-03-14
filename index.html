@@ -1,1078 +1,1233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Arhant Barmate | Infrastructure Engineer · Orthonode Labs Founder</title>
-    <meta name="title" content="Arhant Barmate | Infrastructure Engineer · Orthonode Labs Founder">
-    <meta name="description" content="Arhant Barmate — infrastructure engineer building deterministic physical verification systems for DePIN. Founder of Orthonode Infrastructure Labs. Creator of SHA (Stylus Hardware Anchor) on Arbitrum Stylus. Nexus Protocol. OAP.">
-    <meta name="keywords" content="Arhant Barmate, blockchain engineer India, Rust developer Bhopal, Arbitrum Stylus, DePIN infrastructure, hardware verification, embedded systems, ESP32, Orthonode Labs, SHA protocol, Nexus Protocol">
-    <meta name="author" content="Arhant Barmate">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <link rel="canonical" href="https://arhantbarmate.github.io/">
+  <!-- ═══════════════════════════════════════════════════════════
+       PRIMARY SEO
+  ═══════════════════════════════════════════════════════════ -->
+  <title>Arhant Barmate — Infrastructure Engineer · Founder, Orthonode Systems™</title>
+  <meta name="description" content="Arhant Barmate — infrastructure engineer building deterministic hardware verification for DePIN. Founder of Orthonode Systems™. SHA on Arbitrum Stylus, DotLend on Polkadot, INVARIANT on Bittensor, TON-SHA, TIX-DAO on Solana. Bhopal, India.">
+  <meta name="keywords" content="Arhant Barmate, blockchain engineer India, Rust developer Bhopal, Arbitrum Stylus developer, DePIN infrastructure engineer, hardware verification blockchain, ESP32 eFuse smart contract, Orthonode Systems, SHA protocol, Nexus Protocol, OAP integrity, TON-SHA, INVARIANT Bittensor, DotLend Polkadot, TIX-DAO Solana, verification infrastructure, zero trust DePIN, embedded systems blockchain">
+  <meta name="author" content="Arhant Barmate">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#05050e">
 
-    <meta name="geo.region" content="IN-MP">
-    <meta name="geo.placename" content="Bhopal, Madhya Pradesh, India">
-    <meta name="geo.position" content="23.2599;77.4126">
-    <meta name="ICBM" content="23.2599, 77.4126">
+  <!-- ═══════════════════════════════════════════════════════════
+       GEO
+  ═══════════════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN-MP">
+  <meta name="geo.placename" content="Bhopal, Madhya Pradesh, India">
+  <meta name="geo.position" content="23.2599;77.4126">
+  <meta name="ICBM" content="23.2599, 77.4126">
 
-    <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://arhantbarmate.github.io/">
-    <meta property="og:title" content="Arhant Barmate | Infrastructure Engineer & Blockchain Builder">
-    <meta property="og:description" content="Building deterministic physical verification infrastructure for decentralized networks. Founder @ Orthonode Labs. Creator of SHA on Arbitrum Stylus, OAP, Nexus Protocol.">
-    <meta property="og:image" content="https://arhantbarmate.github.io/og-image.png">
-    <meta property="og:locale" content="en_IN">
-    <meta property="og:site_name" content="Arhant Barmate">
-    <meta property="profile:first_name" content="Arhant">
-    <meta property="profile:last_name" content="Barmate">
-    <meta property="profile:username" content="arhantbarmate">
+  <!-- ═══════════════════════════════════════════════════════════
+       CANONICAL
+  ═══════════════════════════════════════════════════════════ -->
+  <link rel="canonical" href="https://arhantbarmate.github.io/">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Arhant_Dev">
-    <meta name="twitter:creator" content="@Arhant_Dev">
-    <meta name="twitter:title" content="Arhant Barmate | Infrastructure Engineer">
-    <meta name="twitter:description" content="Building hardware verification infrastructure for DePIN. Founder @ Orthonode Labs.">
-    <meta name="twitter:image" content="https://arhantbarmate.github.io/twitter-card.png">
+  <!-- ═══════════════════════════════════════════════════════════
+       OPEN GRAPH
+  ═══════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Arhant Barmate — Infrastructure Engineer · Founder, Orthonode Systems™">
+  <meta property="og:description" content="Building deterministic hardware verification infrastructure across Arbitrum, Polkadot, Bittensor, Solana, and TON. SHA · DotLend · INVARIANT · TON-SHA · TIX-DAO. Bhopal, India.">
+  <meta property="og:url" content="https://arhantbarmate.github.io/">
+  <meta property="og:image" content="https://arhantbarmate.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Arhant Barmate — Founder, Orthonode Systems™">
+  <meta property="og:site_name" content="Arhant Barmate">
+  <meta property="og:locale" content="en_IN">
+  <meta property="profile:first_name" content="Arhant">
+  <meta property="profile:last_name" content="Barmate">
+  <meta property="profile:username" content="arhantbarmate">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Arhant Barmate",
-      "givenName": "Arhant",
-      "familyName": "Barmate",
-      "jobTitle": "Founder & Lead Infrastructure Engineer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Orthonode Infrastructure Labs",
-        "url": "https://orthonode.xyz",
-        "sameAs": ["https://github.com/orthonode","https://twitter.com/OrthonodeSys"]
-      },
-      "url": "https://arhantbarmate.github.io",
-      "image": "https://github.com/arhantbarmate.png",
-      "sameAs": [
-        "https://github.com/arhantbarmate",
-        "https://www.linkedin.com/in/arhant-barmate-5710163aa/",
-        "https://x.com/Arhant_Dev",
-        "https://instagram.com/arhantofficial/",
-        "https://orthonode.xyz"
-      ],
-      "knowsAbout": ["Blockchain Development","Rust Programming Language","Smart Contract Development","Arbitrum Stylus","Hardware Verification Protocols","DePIN Infrastructure","Embedded Systems Engineering","ESP32 Development","Applied Cryptography","WebAssembly (WASM)","Solidity","C/C++ Programming"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bhopal",
-        "addressRegion": "Madhya Pradesh",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
+  <!-- ═══════════════════════════════════════════════════════════
+       TWITTER CARD
+  ═══════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Arhant_Dev">
+  <meta name="twitter:creator" content="@Arhant_Dev">
+  <meta name="twitter:title" content="Arhant Barmate — Infrastructure Engineer · Founder, Orthonode Systems™">
+  <meta name="twitter:description" content="Building deterministic hardware verification for DePIN across 5 chains. SHA · DotLend · INVARIANT · TON-SHA · TIX-DAO.">
+  <meta name="twitter:image" content="https://arhantbarmate.github.io/og-image.png">
+  <meta name="twitter:image:alt" content="Arhant Barmate — Founder, Orthonode Systems™">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAVICON & MANIFEST
+  ═══════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="og-image.png">
+  <link rel="apple-touch-icon" href="og-image.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SCHEMA.ORG JSON-LD
+  ═══════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://arhantbarmate.github.io/#person",
+        "name": "Arhant Barmate",
+        "alternateName": ["Arhant_Dev", "arhantbarmate"],
+        "jobTitle": "Infrastructure Engineer",
+        "description": "Infrastructure engineer building deterministic physical verification systems for DePIN. Founder of Orthonode Systems. Operating across Arbitrum, Polkadot, Bittensor, Solana, and TON.",
+        "url": "https://arhantbarmate.github.io/",
+        "image": "https://arhantbarmate.github.io/og-image.png",
         "email": "infrastructure@orthonode.xyz",
-        "contactType": "Professional"
+        "sameAs": [
+          "https://github.com/arhantbarmate",
+          "https://linkedin.com/in/arhant-barmate-5710163aa",
+          "https://twitter.com/Arhant_Dev",
+          "https://instagram.com/arhantofficial",
+          "https://orthonode.xyz"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhopal",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "knowsAbout": [
+          "Rust", "C++", "Python", "Solidity", "Tact",
+          "Arbitrum Stylus", "WASM", "Polkadot Hub", "PolkaVM",
+          "Bittensor", "Solana", "TON",
+          "DePIN Networks", "Zero-Trust Architecture",
+          "ESP32-S3 eFuse", "ARMv8", "Embedded Systems",
+          "Keccak-256", "ECDSA", "Noir ZK Circuits",
+          "Hardware Identity", "Blockchain Infrastructure"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://orthonode.xyz/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://orthonode.xyz/#organization",
+        "name": "Orthonode Systems",
+        "alternateName": "Orthonode Infrastructure Labs",
+        "url": "https://orthonode.xyz",
+        "logo": "https://orthonode.xyz/logo.png",
+        "description": "Verification Infrastructure for the Decentralized Stack. Trust primitives across Arbitrum, Polkadot, Bittensor, Solana, and TON.",
+        "founder": { "@id": "https://arhantbarmate.github.io/#person" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bhopal",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://twitter.com/OrthonodeSys",
+          "https://github.com/orthonode"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://arhantbarmate.github.io/#website",
+        "url": "https://arhantbarmate.github.io/",
+        "name": "Arhant Barmate",
+        "description": "Founder portfolio of Arhant Barmate — infrastructure engineer, Orthonode Systems",
+        "author": { "@id": "https://arhantbarmate.github.io/#person" },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "SHA — Stylus Hardware Anchor",
+        "description": "Hardware Sybil resistance primitive for Arbitrum Stylus. 12,564 gas/receipt at N=50. $25K Stylus Sprint grant under review.",
+        "applicationCategory": "BlockchainApplication",
+        "author": { "@id": "https://arhantbarmate.github.io/#person" },
+        "url": "https://orthonode.xyz/sha.html"
       }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════
+       DESIGN SYSTEM — CONSTELLATION FOUNDER PAGE
+       Arhant Barmate · March 2026
+    ═══════════════════════════════════════════════════════════ */
+    :root {
+      --bg:       #05050e;
+      --bg-card:  rgba(8,10,24,0.88);
+      --bg-glass: rgba(12,16,36,0.55);
+      --blue:     #00d4ff;
+      --purple:   #8b5cf6;
+      --emerald:  #10b981;
+      --amber:    #f59e0b;
+      --pink:     #e6007a;
+      --teal:     #52b5ae;
+      --text:     #f1f5f9;
+      --text2:    #94a3b8;
+      --text3:    #475569;
+      --bd:       rgba(255,255,255,0.06);
+      --bd-b:     rgba(0,212,255,0.18);
+      --mono:     'Courier New','Monaco','Lucida Console',monospace;
+      --sans:     -apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+      --r:        12px;
+      --rl:       20px;
+      --ease:     cubic-bezier(0.4,0,0.2,1);
+      --t:        all 0.3s var(--ease);
     }
-    </script>
 
-    <link rel="icon" type="image/png" href="https://github.com/arhantbarmate.png">
-    <link rel="apple-touch-icon" href="https://github.com/arhantbarmate.png">
-    <meta name="theme-color" content="#060608">
+    *,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      background:var(--bg); color:var(--text);
+      font-family:var(--sans); line-height:1.6;
+      overflow-x:hidden; min-height:100vh;
+    }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    /* CANVAS */
+    #cv {
+      position:fixed; inset:0; z-index:0; pointer-events:none;
+    }
 
-    <style>
-        :root {
-            --bg: #060608;
-            --bg-2: #0c0c10;
-            --bg-3: #121218;
-            --bg-4: #1a1a22;
+    /* LAYER */
+    .layer { position:relative; z-index:10; }
 
-            --line: #1e1e28;
-            --line-2: #2a2a36;
-            --line-3: #38384a;
+    /* RIPPLE */
+    .rpl {
+      position:fixed; border-radius:50%;
+      pointer-events:none; z-index:9999;
+      transform:scale(0); opacity:1;
+      animation:rpl 0.9s var(--ease) forwards;
+    }
+    @keyframes rpl {
+      0%   { transform:scale(0); opacity:0.8; }
+      60%  { opacity:0.3; }
+      100% { transform:scale(5); opacity:0; }
+    }
 
-            --ink: #f0f0f4;
-            --ink-2: #c8c8d4;
-            --ink-3: #8888a0;
-            --ink-4: #505068;
-            --ink-5: #32323e;
+    /* NAV */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:200;
+      padding:18px 48px;
+      display:flex; align-items:center; justify-content:space-between;
+      background:rgba(5,5,14,0.7);
+      backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+      border-bottom:1px solid transparent; transition:var(--t);
+    }
+    nav.sc { padding:12px 48px; background:rgba(5,5,14,0.94); border-color:var(--bd); }
 
-            --blue: #28a0f0;
-            --blue-dim: rgba(40,160,240,0.12);
-            --blue-glow: rgba(40,160,240,0.25);
+    .nb {
+      font-family:var(--mono); font-size:13px;
+      color:var(--text2); text-decoration:none; letter-spacing:0.12em;
+    }
+    .nb em { color:var(--blue); font-style:normal; }
 
-            --amber: #fbbf24;
-            --amber-dim: rgba(251,191,36,0.1);
+    .nl { display:flex; gap:36px; list-style:none; }
+    .nl a {
+      font-family:var(--mono); font-size:12px;
+      color:var(--text3); text-decoration:none;
+      letter-spacing:0.08em; transition:color 0.25s;
+    }
+    .nl a:hover { color:var(--blue); }
 
-            --green: #00d084;
-            --green-dim: rgba(0,208,132,0.1);
-            --green-glow: rgba(0,208,132,0.2);
+    .nlive {
+      display:flex; align-items:center; gap:7px;
+      font-family:var(--mono); font-size:11px; color:var(--emerald);
+    }
+    .nlive .dot {
+      width:6px; height:6px; border-radius:50%;
+      background:var(--emerald); box-shadow:0 0 8px var(--emerald);
+      animation:pulse 2s ease-in-out infinite;
+    }
 
-            --red: #ff4d6a;
+    /* HERO */
+    #hero {
+      min-height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      padding:110px 48px 70px; position:relative;
+    }
+    .hw {
+      max-width:960px; width:100%;
+      display:grid; grid-template-columns:1fr 300px;
+      gap:72px; align-items:center;
+    }
 
-            --display: 'Syne', sans-serif;
-            --serif: 'Instrument Serif', Georgia, serif;
-            --mono: 'DM Mono', 'Courier New', monospace;
-        }
+    .eyb {
+      font-family:var(--mono); font-size:11px;
+      color:var(--blue); letter-spacing:0.22em; text-transform:uppercase;
+      margin-bottom:22px;
+      display:flex; align-items:center; gap:14px;
+      opacity:0; animation:fu 0.7s var(--ease) 0.1s forwards;
+    }
+    .eyb::before {
+      content:''; display:block; width:28px; height:1px;
+      background:linear-gradient(90deg,transparent,var(--blue));
+    }
 
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    h1.hn {
+      font-size:clamp(48px,7vw,80px); font-weight:800;
+      line-height:1.02; letter-spacing:-0.03em;
+      background:linear-gradient(140deg,#fff 0%,#c8d4e8 55%,#8b9fc4 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      background-clip:text; margin-bottom:14px;
+      opacity:0; animation:fu 0.7s var(--ease) 0.2s forwards;
+    }
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
+    .hr2 {
+      font-size:clamp(17px,2.2vw,22px); color:var(--text2); font-weight:300;
+      margin-bottom:6px; opacity:0; animation:fu 0.7s var(--ease) 0.3s forwards;
+    }
 
-        body {
-            background: var(--bg);
-            color: var(--ink-2);
-            font-family: var(--mono);
-            font-size: 15px;
-            line-height: 1.65;
-            overflow-x: hidden;
-        }
+    .tww {
+      font-family:var(--mono); font-size:14px; color:var(--blue);
+      min-height:20px; margin-bottom:30px;
+      opacity:0; animation:fu 0.7s var(--ease) 0.4s forwards;
+    }
+    .cur {
+      display:inline-block; width:2px; height:14px;
+      background:var(--blue); margin-left:2px; vertical-align:middle;
+      animation:blink 1s step-end infinite;
+    }
 
-        /* Noise texture overlay */
-        body::after {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.35;
-        }
+    .hdesc {
+      font-size:15px; color:var(--text2); line-height:1.75;
+      max-width:540px; margin-bottom:38px;
+      opacity:0; animation:fu 0.7s var(--ease) 0.5s forwards;
+    }
+    .hdesc a { color:var(--blue); text-decoration:none; }
+    .hdesc a:hover { text-decoration:underline; }
 
-        /* Scanline background */
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                rgba(255,255,255,0.008) 2px,
-                rgba(255,255,255,0.008) 4px
-            );
-            pointer-events: none;
-            z-index: 0;
-        }
+    .socs {
+      display:flex; flex-wrap:wrap; gap:12px;
+      opacity:0; animation:fu 0.7s var(--ease) 0.6s forwards;
+    }
+    .soc {
+      display:inline-flex; align-items:center; gap:7px;
+      padding:8px 16px; border:1px solid var(--bd); border-radius:40px;
+      font-family:var(--mono); font-size:11px;
+      color:var(--text2); text-decoration:none;
+      background:var(--bg-glass); backdrop-filter:blur(10px);
+      transition:var(--t);
+    }
+    .soc svg { width:13px; height:13px; flex-shrink:0; }
+    .soc:hover {
+      border-color:var(--blue); color:var(--blue);
+      background:rgba(0,212,255,0.06); transform:translateY(-2px);
+      box-shadow:0 8px 24px rgba(0,212,255,0.1);
+    }
 
-        ::selection { background: var(--blue-glow); color: var(--ink); }
-        a { color: inherit; text-decoration: none; transition: color 0.2s; }
+    /* PROFILE */
+    .hic {
+      display:flex; flex-direction:column; align-items:center; gap:18px;
+      opacity:0; animation:fu 0.8s var(--ease) 0.35s forwards;
+    }
+    .pf { position:relative; width:230px; height:230px; }
+    .pra {
+      position:absolute; inset:-14px; border-radius:50%;
+      background:conic-gradient(from 0deg,var(--blue) 0%,var(--purple) 50%,var(--blue) 100%);
+      animation:spin 10s linear infinite; opacity:0.55;
+    }
+    .prb { position:absolute; inset:-7px; border-radius:50%; background:var(--bg); }
+    .pgw {
+      position:absolute; inset:-22px; border-radius:50%;
+      background:radial-gradient(circle,rgba(0,212,255,0.22) 0%,transparent 70%);
+      animation:gp 3.5s ease-in-out infinite; z-index:0;
+    }
+    .pfoto {
+      position:relative; z-index:1;
+      width:230px; height:230px; border-radius:50%; object-fit:cover;
+      border:2px solid rgba(0,212,255,0.25); display:block;
+    }
 
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg); }
-        ::-webkit-scrollbar-thumb { background: var(--line-3); border-radius: 3px; }
+    .cbadge {
+      display:flex; align-items:center; gap:9px; padding:9px 18px;
+      background:var(--bg-card); border:1px solid var(--bd); border-radius:40px;
+      backdrop-filter:blur(12px); text-decoration:none; transition:var(--t);
+    }
+    .cbadge:hover { border-color:var(--bd-b); }
+    .cbadge img { width:20px; height:20px; object-fit:contain; border-radius:3px; }
+    .cbadge span { font-family:var(--mono); font-size:11px; color:var(--text2); }
+    .cbadge em { color:var(--blue); font-style:normal; }
 
-        /* ── LAYOUT ── */
-        .page {
-            position: relative;
-            z-index: 1;
-            min-height: 100vh;
-        }
+    .loc {
+      display:flex; align-items:center; gap:6px;
+      font-family:var(--mono); font-size:11px; color:var(--text3);
+    }
+    .loc svg { width:12px; height:12px; color:var(--blue); }
 
-        .wrap {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+    .shi {
+      position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:6px;
+      opacity:0.38; animation:flt 2.4s ease-in-out infinite;
+    }
+    .shi span { font-family:var(--mono); font-size:9px; color:var(--text3); letter-spacing:0.2em; }
 
-        /* ── TOP BAR ── */
-        .topbar {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 100;
-            backdrop-filter: blur(16px) saturate(160%);
-            background: rgba(6,6,8,0.82);
-            border-bottom: 1px solid var(--line);
-            padding: 0.75rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .topbar-left {
-            display: flex; align-items: center; gap: 0.75rem;
-            font-family: var(--mono); font-size: 0.72rem;
-            color: var(--ink-4); letter-spacing: 0.05em;
-        }
-        .live-dot {
-            width: 6px; height: 6px;
-            background: var(--green);
-            border-radius: 50%;
-            box-shadow: 0 0 8px var(--green-glow);
-            animation: blink 2.5s ease-in-out infinite;
-            flex-shrink: 0;
-        }
-        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    /* SECTION */
+    .sec { padding:100px 48px; max-width:1020px; margin:0 auto; }
 
-        .topbar-right {
-            display: flex; gap: 1.5rem;
-            font-family: var(--mono); font-size: 0.72rem;
-            color: var(--ink-4);
-        }
-        .topbar-right a:hover { color: var(--blue); }
+    .sl {
+      font-family:var(--mono); font-size:10px; color:var(--blue);
+      letter-spacing:0.28em; text-transform:uppercase; margin-bottom:12px;
+      display:flex; align-items:center; gap:14px;
+    }
+    .sl::after {
+      content:''; flex:1; height:1px;
+      background:linear-gradient(90deg,var(--bd-b),transparent);
+      max-width:180px;
+    }
+    .st {
+      font-size:clamp(26px,4vw,38px); font-weight:700;
+      letter-spacing:-0.025em; color:var(--text); margin-bottom:50px;
+    }
 
-        /* ── HERO ── */
-        .hero {
-            padding: 8rem 0 5rem;
-            display: grid;
-            grid-template-columns: 1fr 380px;
-            gap: 4rem;
-            align-items: end;
-            border-bottom: 1px solid var(--line);
-        }
+    .dv { height:1px; margin:0 48px; background:linear-gradient(90deg,transparent,var(--bd),transparent); }
 
-        .hero-left { }
+    /* METRICS */
+    #metrics { padding:0 48px; }
+    .mbar {
+      max-width:1020px; margin:0 auto;
+      display:grid; grid-template-columns:repeat(5,1fr);
+      background:var(--bd); border-radius:var(--rl);
+      border:1px solid var(--bd); overflow:hidden;
+    }
+    .mc {
+      background:var(--bg-card); padding:30px 20px; text-align:center;
+      backdrop-filter:blur(20px); transition:background 0.3s;
+      border-right:1px solid var(--bd);
+    }
+    .mc:last-child { border-right:none; }
+    .mc:hover { background:rgba(0,212,255,0.04); }
+    .mn {
+      font-family:var(--mono); font-size:clamp(20px,2.5vw,28px);
+      font-weight:700; color:var(--blue); display:block; margin-bottom:6px; line-height:1;
+    }
+    .mn.g { color:var(--emerald); }
+    .mn.p { color:var(--purple); }
+    .mn.a { color:var(--amber); }
+    .ml { font-family:var(--mono); font-size:10px; color:var(--text3); letter-spacing:0.1em; }
 
-        .hero-tag {
-            font-family: var(--mono);
-            font-size: 0.72rem;
-            color: var(--ink-4);
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            margin-bottom: 1.5rem;
-            display: flex; align-items: center; gap: 0.75rem;
-        }
-        .hero-tag::before {
-            content: '';
-            display: block;
-            width: 24px; height: 1px;
-            background: var(--ink-4);
-        }
+    /* STATUS */
+    .sg {
+      display:grid; grid-template-columns:repeat(auto-fill,minmax(285px,1fr)); gap:18px;
+    }
+    .sc2 {
+      background:var(--bg-card); border:1px solid var(--bd); border-radius:var(--r);
+      padding:24px; backdrop-filter:blur(20px); transition:var(--t);
+      position:relative; overflow:hidden;
+    }
+    .sc2::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg,var(--blue),var(--purple));
+      opacity:0; transition:opacity 0.3s;
+    }
+    .sc2:hover { border-color:var(--bd-b); transform:translateY(-3px); box-shadow:0 20px 60px rgba(0,212,255,0.07); }
+    .sc2:hover::before { opacity:1; }
 
-        .hero-name {
-            font-family: var(--display);
-            font-size: clamp(3.5rem, 7vw, 6rem);
-            font-weight: 800;
-            line-height: 0.92;
-            letter-spacing: -0.04em;
-            color: var(--ink);
-            margin-bottom: 0.5rem;
-        }
-        .hero-name em {
-            font-style: italic;
-            font-family: var(--serif);
-            font-size: 0.85em;
-            color: var(--ink-3);
-            font-weight: 400;
-            letter-spacing: -0.02em;
-        }
+    .stop { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }
+    .schn { font-family:var(--mono); font-size:10px; color:var(--text3); letter-spacing:0.1em; }
 
-        .hero-role {
-            font-family: var(--mono);
-            font-size: 0.85rem;
-            color: var(--ink-3);
-            margin: 1.5rem 0 2rem;
-            line-height: 1.7;
-            max-width: 520px;
-        }
-        .hero-role strong { color: var(--ink); }
+    .badge {
+      font-family:var(--mono); font-size:9px;
+      padding:3px 10px; border-radius:20px; letter-spacing:0.1em; text-transform:uppercase;
+    }
+    .bl { background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:var(--emerald); }
+    .ba { background:rgba(0,212,255,0.1);  border:1px solid rgba(0,212,255,0.3);  color:var(--blue); }
+    .bd2 { background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); color:var(--amber); }
 
-        .hero-cta {
-            display: flex; gap: 0.75rem; flex-wrap: wrap;
-        }
-        .btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.7rem 1.4rem;
-            font-family: var(--mono); font-size: 0.8rem; font-weight: 500;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            cursor: pointer;
-        }
-        .btn-primary {
-            background: var(--blue); color: var(--bg);
-        }
-        .btn-primary:hover {
-            background: #4ab8ff;
-            box-shadow: 0 0 24px var(--blue-glow);
-            transform: translateY(-1px);
-        }
-        .btn-ghost {
-            background: transparent;
-            color: var(--ink-2);
-            border: 1px solid var(--line-3);
-        }
-        .btn-ghost:hover {
-            border-color: var(--blue);
-            color: var(--blue);
-            transform: translateY(-1px);
-        }
+    .sname { font-size:17px; font-weight:600; margin-bottom:3px; }
+    .ssub  { font-family:var(--mono); font-size:11px; color:var(--text3); margin-bottom:14px; }
+    .srows { display:flex; flex-direction:column; gap:5px; }
+    .srow  { display:flex; justify-content:space-between; font-family:var(--mono); font-size:11px; }
+    .sk { color:var(--text3); }
+    .sv { color:var(--blue); }
+    .sv.g { color:var(--emerald); }
+    .sv.a { color:var(--amber); }
+    .sv.p { color:var(--purple); }
 
-        /* Hero right — profile card */
-        .hero-right {
-            border: 1px solid var(--line-2);
-            background: var(--bg-2);
-            overflow: hidden;
-        }
+    /* PROTOCOLS */
+    .pg {
+      display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:18px;
+    }
+    .pc {
+      background:var(--bg-card); border:1px solid var(--bd); border-radius:var(--rl);
+      padding:28px; backdrop-filter:blur(20px); transition:var(--t);
+      position:relative; overflow:hidden; cursor:default;
+    }
+    .pc::after {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(ellipse at top left,var(--cg,rgba(0,212,255,0.04)),transparent 55%);
+      pointer-events:none;
+    }
+    .pc:hover { border-color:var(--bd-b); transform:translateY(-4px); box-shadow:0 24px 80px rgba(0,212,255,0.07); }
+    .pc.cp  { --cg:rgba(139,92,246,0.05); }
+    .pc.ce  { --cg:rgba(16,185,129,0.05); }
+    .pc.ct  { --cg:rgba(0,136,204,0.05); }
+    .pc.cpk { --cg:rgba(230,0,122,0.05); }
+    .pc.cb  { --cg:rgba(82,181,174,0.05); }
 
-        .profile-img-wrap {
-            position: relative;
-            overflow: hidden;
-            height: 260px;
-            background: var(--bg-3);
-            border-bottom: 1px solid var(--line);
-        }
-        .profile-img-wrap img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            object-position: center top;
-            filter: grayscale(15%) contrast(1.05);
-            transition: filter 0.4s ease, transform 0.5s ease;
-        }
-        .profile-img-wrap:hover img {
-            filter: grayscale(0%) contrast(1.1);
-            transform: scale(1.03);
-        }
-        .profile-img-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(to bottom, transparent 40%, rgba(6,6,8,0.6) 100%);
-        }
-        .profile-status {
-            position: absolute; bottom: 1rem; left: 1rem;
-            display: flex; align-items: center; gap: 0.5rem;
-            font-family: var(--mono); font-size: 0.7rem;
-            color: var(--green);
-            background: rgba(6,6,8,0.75);
-            padding: 0.35rem 0.75rem;
-            border: 1px solid rgba(0,208,132,0.25);
-            backdrop-filter: blur(8px);
-        }
+    .ptop { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:14px; }
+    .pico {
+      width:44px; height:44px; border-radius:10px;
+      display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+    }
 
-        .profile-meta {
-            padding: 1.25rem 1.5rem;
-        }
-        .profile-name-block {
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--line);
-        }
-        .profile-name-block strong {
-            display: block;
-            font-family: var(--display);
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--ink);
-            letter-spacing: -0.02em;
-        }
-        .profile-name-block span {
-            font-size: 0.75rem;
-            color: var(--ink-4);
-            font-family: var(--mono);
-        }
+    .chain {
+      font-family:var(--mono); font-size:9px;
+      padding:4px 10px; border-radius:20px; letter-spacing:0.1em; text-transform:uppercase;
+    }
+    .arb { background:rgba(41,157,255,0.1);  border:1px solid rgba(41,157,255,0.25); color:#299dff; }
+    .ton { background:rgba(0,136,204,0.1);   border:1px solid rgba(0,136,204,0.25);  color:#0088cc; }
+    .dot { background:rgba(230,0,122,0.1);   border:1px solid rgba(230,0,122,0.25);  color:#e6007a; }
+    .bit { background:rgba(82,181,174,0.1);  border:1px solid rgba(82,181,174,0.25); color:#52b5ae; }
+    .sol { background:rgba(153,69,255,0.1);  border:1px solid rgba(153,69,255,0.25); color:#9945ff; }
+    .agn { background:rgba(148,163,184,0.08);border:1px solid rgba(148,163,184,0.18);color:var(--text2); }
 
-        .profile-detail-row {
-            display: flex; justify-content: space-between; align-items: flex-start;
-            font-size: 0.75rem; font-family: var(--mono);
-            padding: 0.4rem 0;
-            border-bottom: 1px solid var(--line);
-            gap: 1rem;
-        }
-        .profile-detail-row:last-child { border-bottom: none; }
-        .detail-key { color: var(--ink-4); flex-shrink: 0; }
-        .detail-val { color: var(--ink-2); text-align: right; }
-        .detail-val a:hover { color: var(--blue); }
-        .val-blue { color: var(--blue); }
-        .val-green { color: var(--green); }
-        .val-amber { color: var(--amber); }
+    .pname { font-size:19px; font-weight:600; margin-bottom:3px; }
+    .psub  { font-family:var(--mono); font-size:11px; color:var(--text3); margin-bottom:14px; }
+    .pdesc { font-size:13px; color:var(--text2); line-height:1.65; margin-bottom:20px; }
+    .pdesc strong { color:var(--blue); font-weight:600; }
 
-        /* ── STATUS TERMINAL ── */
-        .terminal-section {
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--line);
-        }
-        .terminal {
-            background: var(--bg-2);
-            border: 1px solid var(--line-2);
-            overflow: hidden;
-        }
-        .terminal-bar {
-            background: var(--bg-3);
-            border-bottom: 1px solid var(--line);
-            padding: 0.6rem 1.25rem;
-            display: flex; justify-content: space-between; align-items: center;
-            font-family: var(--mono); font-size: 0.72rem;
-            color: var(--ink-4);
-        }
-        .term-dots { display: flex; gap: 0.4rem; }
-        .term-dot { width: 10px; height: 10px; border-radius: 50%; }
-        .term-dot.r { background: #ff5f57; }
-        .term-dot.y { background: #febc2e; }
-        .term-dot.g { background: #28c840; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; }
+    .tag  {
+      font-family:var(--mono); font-size:10px; padding:3px 10px;
+      background:rgba(255,255,255,0.04); border:1px solid var(--bd);
+      border-radius:20px; color:var(--text3);
+    }
 
-        .terminal-body {
-            padding: 1.5rem 1.75rem;
-            font-family: var(--mono); font-size: 0.82rem;
-            line-height: 1.8;
-        }
-        .t-prompt { color: var(--green); margin-right: 0.5rem; }
-        .t-cmd { color: var(--ink); }
-        .t-comment { color: var(--ink-4); font-style: italic; }
-        .t-key { color: var(--amber); }
-        .t-val-blue { color: var(--blue); }
-        .t-val-green { color: var(--green); }
-        .t-val-amber { color: var(--amber); }
-        .t-val-red { color: var(--red); }
-        .t-link { color: var(--blue); }
-        .t-link:hover { text-decoration: underline; }
-        .t-blank { display: block; height: 0.5rem; }
-        .t-line { display: flex; gap: 0.5rem; align-items: flex-start; }
+    .ctr {
+      display:inline-flex; align-items:center; gap:7px;
+      font-family:var(--mono); font-size:9px; color:var(--text3);
+      background:rgba(255,255,255,0.03); border:1px solid var(--bd);
+      border-radius:4px; padding:4px 10px; margin-top:12px; word-break:break-all;
+    }
+    .ctr em { color:var(--blue); opacity:0.6; font-style:normal; margin-right:4px; }
 
-        /* ── METRICS STRIP ── */
-        .metrics {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1px;
-            background: var(--line);
-            border: 1px solid var(--line);
-            margin: 3rem 0;
-        }
-        .metric {
-            background: var(--bg-2);
-            padding: 1.5rem 1.25rem;
-            text-align: center;
-            transition: background 0.2s;
-        }
-        .metric:hover { background: var(--bg-3); }
-        .metric-val {
-            font-family: var(--display);
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: var(--ink);
-            line-height: 1;
-            margin-bottom: 0.4rem;
-            letter-spacing: -0.03em;
-        }
-        .metric-val.blue { color: var(--blue); }
-        .metric-val.green { color: var(--green); }
-        .metric-val.amber { color: var(--amber); }
-        .metric-label {
-            font-family: var(--mono); font-size: 0.65rem;
-            color: var(--ink-4); text-transform: uppercase;
-            letter-spacing: 0.08em; line-height: 1.4;
-        }
+    /* STACK */
+    .skg {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:18px;
+    }
+    .stk {
+      background:var(--bg-card); border:1px solid var(--bd); border-radius:var(--r);
+      padding:24px; backdrop-filter:blur(20px); transition:var(--t);
+    }
+    .stk:hover { border-color:var(--bd-b); }
+    .skl { font-family:var(--mono); font-size:10px; color:var(--blue); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:16px; }
+    .ski  { display:flex; flex-direction:column; gap:9px; }
+    .ski div {
+      font-size:13px; color:var(--text2); display:flex; align-items:center; gap:10px;
+    }
+    .ski div::before {
+      content:''; width:4px; height:4px; border-radius:50%; background:var(--blue); flex-shrink:0;
+    }
 
-        /* ── SECTION HEADER ── */
-        .sec-head {
-            display: flex; align-items: center; gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .sec-num {
-            font-family: var(--mono); font-size: 0.68rem;
-            color: var(--ink-5); text-transform: uppercase;
-            letter-spacing: 0.12em; flex-shrink: 0;
-        }
-        .sec-title {
-            font-family: var(--display); font-size: 1.5rem;
-            font-weight: 700; color: var(--ink);
-            letter-spacing: -0.02em;
-        }
-        .sec-line {
-            flex: 1; height: 1px;
-            background: var(--line-2);
-        }
+    /* CONNECT */
+    .cng {
+      display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px;
+    }
+    .cn {
+      background:var(--bg-card); border:1px solid var(--bd); border-radius:var(--r); padding:22px;
+      backdrop-filter:blur(20px); text-decoration:none; color:inherit;
+      display:flex; align-items:center; gap:16px; transition:var(--t);
+    }
+    .cn:hover { border-color:var(--bd-b); transform:translateY(-2px); box-shadow:0 12px 40px rgba(0,212,255,0.07); }
+    .cni {
+      width:44px; height:44px; border-radius:10px;
+      display:flex; align-items:center; justify-content:center;
+      background:rgba(0,212,255,0.07); border:1px solid rgba(0,212,255,0.14);
+      color:var(--blue); flex-shrink:0;
+    }
+    .cni svg { width:20px; height:20px; }
+    .cnp { font-size:13px; font-weight:600; margin-bottom:2px; }
+    .cnh { font-family:var(--mono); font-size:11px; color:var(--text3); }
+    .cna { margin-left:auto; color:var(--text3); transition:var(--t); }
+    .cn:hover .cna { color:var(--blue); transform:translateX(4px); }
 
-        /* ── PROJECTS ── */
-        .projects-section {
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--line);
-        }
+    /* FOOTER */
+    footer { border-top:1px solid var(--bd); padding:40px 48px; }
+    .fi {
+      max-width:1020px; margin:0 auto;
+      display:flex; align-items:center; justify-content:space-between;
+      flex-wrap:wrap; gap:14px;
+      font-family:var(--mono); font-size:11px; color:var(--text3);
+    }
+    .fi a { color:var(--blue); text-decoration:none; }
 
-        .project-list {
-            display: grid; grid-template-columns: 1fr;
-            gap: 1px; background: var(--line);
-            border: 1px solid var(--line);
-        }
+    /* ANIMATIONS */
+    @keyframes pulse { 0%,100%{opacity:1}  50%{opacity:0.3} }
+    @keyframes blink { 0%,100%{opacity:1}  50%{opacity:0}   }
+    @keyframes spin  { to{transform:rotate(360deg)} }
+    @keyframes gp    { 0%,100%{opacity:0.6;transform:scale(1)} 50%{opacity:1;transform:scale(1.06)} }
+    @keyframes flt   { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(7px)} }
+    @keyframes fu    { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
 
-        .project-row {
-            background: var(--bg-2);
-            display: grid;
-            grid-template-columns: 240px 1fr;
-            transition: background 0.2s;
-        }
-        .project-row:hover { background: var(--bg-3); }
+    .rev { opacity:0; transform:translateY(22px); transition:opacity 0.65s var(--ease),transform 0.65s var(--ease); }
+    .rev.on { opacity:1; transform:translateY(0); }
+    .revs > * { opacity:0; transform:translateY(18px); transition:opacity 0.5s var(--ease),transform 0.5s var(--ease); }
+    .revs.on > *:nth-child(1) { opacity:1;transform:none;transition-delay:0.05s }
+    .revs.on > *:nth-child(2) { opacity:1;transform:none;transition-delay:0.12s }
+    .revs.on > *:nth-child(3) { opacity:1;transform:none;transition-delay:0.19s }
+    .revs.on > *:nth-child(4) { opacity:1;transform:none;transition-delay:0.26s }
+    .revs.on > *:nth-child(5) { opacity:1;transform:none;transition-delay:0.33s }
+    .revs.on > *:nth-child(6) { opacity:1;transform:none;transition-delay:0.40s }
+    .revs.on > *:nth-child(7) { opacity:1;transform:none;transition-delay:0.47s }
 
-        .proj-label {
-            padding: 2rem 2rem;
-            border-right: 1px solid var(--line);
-            display: flex; flex-direction: column;
-            gap: 0.5rem; justify-content: flex-start;
-        }
-        .proj-tag {
-            font-family: var(--mono); font-size: 0.68rem;
-            text-transform: uppercase; letter-spacing: 0.1em;
-        }
-        .proj-tag.sha { color: var(--blue); }
-        .proj-tag.nexus { color: var(--green); }
-        .proj-tag.oap { color: var(--amber); }
-        .proj-tag.inactive { color: var(--ink-4); }
-
-        .proj-status-chip {
-            display: inline-flex; align-items: center; gap: 0.4rem;
-            font-family: var(--mono); font-size: 0.65rem;
-            padding: 0.2rem 0.6rem;
-            border-radius: 3px;
-            background: var(--bg-4);
-            border: 1px solid var(--line-2);
-            width: fit-content;
-        }
-        .proj-status-chip.live { color: var(--blue); border-color: rgba(40,160,240,0.3); }
-        .proj-status-chip.active { color: var(--green); border-color: rgba(0,208,132,0.3); }
-        .proj-status-chip.dev { color: var(--amber); border-color: rgba(251,191,36,0.3); }
-
-        .proj-body {
-            padding: 2rem 2.5rem;
-        }
-        .proj-title {
-            font-family: var(--display); font-size: 1.2rem;
-            font-weight: 700; color: var(--ink);
-            margin-bottom: 0.6rem; letter-spacing: -0.02em;
-        }
-        .proj-desc {
-            font-size: 0.875rem; color: var(--ink-3);
-            line-height: 1.65; margin-bottom: 1rem;
-            max-width: 640px;
-        }
-        .proj-tags {
-            display: flex; flex-wrap: wrap; gap: 0.4rem;
-            margin-bottom: 1rem;
-        }
-        .ptag {
-            font-family: var(--mono); font-size: 0.68rem;
-            padding: 0.2rem 0.55rem;
-            background: var(--bg-4);
-            border: 1px solid var(--line-3);
-            color: var(--ink-4);
-        }
-        .proj-link {
-            font-family: var(--mono); font-size: 0.78rem;
-            color: var(--blue); display: inline-flex;
-            align-items: center; gap: 0.4rem;
-        }
-        .proj-link:hover { text-decoration: underline; }
-
-        /* ── TECH STACK ── */
-        .stack-section {
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--line);
-        }
-        .stack-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1px; background: var(--line);
-            border: 1px solid var(--line);
-        }
-        .stack-col { background: var(--bg-2); padding: 1.75rem 2rem; }
-        .stack-col-head {
-            font-family: var(--mono); font-size: 0.68rem;
-            color: var(--ink-4); text-transform: uppercase;
-            letter-spacing: 0.12em; margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--line);
-        }
-        .stack-items { display: flex; flex-direction: column; gap: 0.5rem; }
-        .stack-item {
-            font-family: var(--mono); font-size: 0.82rem;
-            color: var(--ink-2);
-            display: flex; align-items: center; gap: 0.6rem;
-        }
-        .stack-item::before {
-            content: '→';
-            color: var(--ink-5); font-size: 0.75rem; flex-shrink: 0;
-        }
-
-        /* ── CONNECT ── */
-        .connect-section {
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--line);
-        }
-        .connect-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 1px; background: var(--line);
-            border: 1px solid var(--line);
-        }
-        .connect-card {
-            background: var(--bg-2); padding: 1.75rem 2rem;
-            display: flex; flex-direction: column; gap: 0.4rem;
-            transition: background 0.2s;
-        }
-        .connect-card:hover { background: var(--bg-3); }
-        .connect-platform {
-            font-family: var(--mono); font-size: 0.68rem;
-            color: var(--ink-5); text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        .connect-handle {
-            font-family: var(--display); font-size: 1.05rem;
-            font-weight: 700; color: var(--ink);
-            letter-spacing: -0.02em;
-        }
-        .connect-desc { font-size: 0.78rem; color: var(--ink-4); }
-        .connect-arrow {
-            margin-top: auto; padding-top: 1rem;
-            font-family: var(--mono); font-size: 0.75rem;
-            color: var(--blue); opacity: 0;
-            transition: opacity 0.2s;
-        }
-        .connect-card:hover .connect-arrow { opacity: 1; }
-
-        /* ── FOOTER ── */
-        footer {
-            padding: 2.5rem 0;
-        }
-        .footer-inner {
-            display: flex; justify-content: space-between;
-            align-items: center; flex-wrap: wrap; gap: 1rem;
-        }
-        .footer-left {
-            font-family: var(--mono); font-size: 0.72rem;
-            color: var(--ink-5);
-        }
-        .footer-left strong { color: var(--ink-4); }
-        .footer-right {
-            display: flex; gap: 1.5rem;
-            font-family: var(--mono); font-size: 0.72rem;
-        }
-        .footer-right a { color: var(--ink-5); }
-        .footer-right a:hover { color: var(--blue); }
-
-        /* ── ANIMATIONS ── */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero-left { animation: fadeUp 0.7s ease-out both; }
-        .hero-right { animation: fadeUp 0.7s ease-out 0.15s both; }
-        .terminal { animation: fadeUp 0.7s ease-out 0.25s both; }
-        .metrics { animation: fadeUp 0.7s ease-out 0.35s both; }
-
-        /* ── RESPONSIVE ── */
-        @media (max-width: 900px) {
-            .hero { grid-template-columns: 1fr; gap: 3rem; }
-            .hero-right { max-width: 420px; }
-            .metrics { grid-template-columns: repeat(3, 1fr); }
-            .stack-grid { grid-template-columns: repeat(2, 1fr); }
-            .connect-grid { grid-template-columns: repeat(2, 1fr); }
-            .project-row { grid-template-columns: 1fr; }
-            .proj-label { border-right: none; border-bottom: 1px solid var(--line); }
-        }
-
-        @media (max-width: 640px) {
-            .wrap { padding: 0 1.25rem; }
-            .hero { padding: 6rem 0 3rem; }
-            .topbar-right { display: none; }
-            .metrics { grid-template-columns: repeat(2, 1fr); }
-            .stack-grid { grid-template-columns: 1fr; }
-            .connect-grid { grid-template-columns: 1fr; }
-            .hero-cta { flex-direction: column; }
-            .btn { justify-content: center; }
-        }
-
-        /* Accessibility */
-        .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0; }
-        a:focus-visible,button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
-        @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:0.01ms!important;transition-duration:0.01ms!important; } }
-    </style>
+    /* RESPONSIVE */
+    @media (max-width:800px) {
+      nav,nav.sc { padding:14px 20px; }
+      .nl { display:none; }
+      #hero { padding:85px 20px 60px; }
+      .hw { grid-template-columns:1fr; text-align:center; gap:44px; }
+      .hic { order:-1; }
+      .eyb,.socs { justify-content:center; }
+      .hdesc { margin:0 auto 34px; }
+      .sec { padding:70px 20px; }
+      .dv  { margin:0 20px; }
+      #metrics { padding:0 20px; }
+      .mbar { grid-template-columns:repeat(3,1fr); }
+      footer { padding:30px 20px; }
+      .fi { flex-direction:column; text-align:center; }
+    }
+    @media (max-width:480px) {
+      .mbar { grid-template-columns:repeat(2,1fr); }
+      h1.hn { font-size:44px; }
+    }
+  </style>
 </head>
 <body>
 
-<a href="#main" class="sr-only">Skip to main content</a>
+<!-- CONSTELLATION CANVAS -->
+<canvas id="cv"></canvas>
 
-<!-- Top Bar -->
-<nav class="topbar" role="navigation" aria-label="Site navigation">
-    <div class="topbar-left">
-        <span class="live-dot" aria-hidden="true"></span>
-        <span>ARHANT_BARMATE.GITHUB.IO</span>
-        <span style="color: var(--line-3);">//</span>
-        <span>FOUNDER · INFRASTRUCTURE ENGINEER</span>
+<div class="layer">
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nb">ARHANT<em>.</em>DEV</a>
+    <ul class="nl">
+      <li><a href="#status">Status</a></li>
+      <li><a href="#protocols">Protocols</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+    <div class="nlive">
+      <div class="dot"></div>
+      <span>OPERATIONAL</span>
     </div>
-    <div class="topbar-right">
-        <a href="https://orthonode.xyz" target="_blank" rel="noopener">orthonode.xyz ↗</a>
-        <a href="https://github.com/arhantbarmate" target="_blank" rel="noopener">github ↗</a>
-        <a href="mailto:infrastructure@orthonode.xyz">contact</a>
-    </div>
-</nav>
+  </nav>
 
-<div class="page" id="main">
-<div class="wrap">
-
-    <!-- ── HERO ── -->
-    <section class="hero" aria-labelledby="hero-name">
-
-        <div class="hero-left">
-            <div class="hero-tag">Infrastructure Engineer · Bhopal, India</div>
-
-            <h1 class="hero-name" id="hero-name">
-                Arhant<br>
-                <em>Barmate</em>
-            </h1>
-
-            <p class="hero-role">
-                Founder & Lead Engineer at <strong>Orthonode Infrastructure Labs</strong>.<br>
-                Building deterministic physical verification infrastructure for autonomous systems and decentralized networks.<br><br>
-                Creator of <strong>SHA</strong> (Stylus Hardware Anchor) on Arbitrum Stylus, <strong>OAP</strong> (Integrity Governance Engine), and <strong>Nexus Protocol</strong> (Zero-Trust Edge Gateway).
-            </p>
-
-            <div class="hero-cta">
-                <a href="https://orthonode.xyz" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    Orthonode Labs ↗
-                </a>
-                <a href="https://github.com/arhantbarmate/stylus-hardware-anchor" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
-                    SHA on GitHub ↗
-                </a>
-                <a href="mailto:infrastructure@orthonode.xyz" class="btn btn-ghost">
-                    Get in touch
-                </a>
-            </div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hw">
+      <!-- TEXT COLUMN -->
+      <div>
+        <div class="eyb">FOUNDER · INFRASTRUCTURE ENGINEER</div>
+        <h1 class="hn">Arhant<br>Barmate</h1>
+        <div class="hr2">Building Verification Infrastructure</div>
+        <div class="tww"><span id="tw"></span><span class="cur"></span></div>
+        <p class="hdesc">
+          I build the trust primitives that decentralized systems cannot assume —
+          deterministic hardware identity, tamper-evident execution receipts, and
+          zero-trust edge gateways. Founder of
+          <a href="https://orthonode.xyz" target="_blank" rel="noopener">Orthonode Systems™</a>.
+          Operating across Arbitrum, Polkadot, Bittensor, Solana, and TON.
+        </p>
+        <div class="socs">
+          <a href="https://github.com/arhantbarmate" target="_blank" rel="noopener" class="soc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/arhantbarmate
+          </a>
+          <a href="https://twitter.com/Arhant_Dev" target="_blank" rel="noopener" class="soc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24H16.17l-4.71-6.23-5.4 6.23H2.74l7.74-8.87L2.06 2.25H8.08l4.26 5.63 5.9-5.63zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg>
+            @Arhant_Dev
+          </a>
+          <a href="https://linkedin.com/in/arhant-barmate-5710163aa" target="_blank" rel="noopener" class="soc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:infrastructure@orthonode.xyz" class="soc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            infrastructure@orthonode.xyz
+          </a>
         </div>
+      </div>
 
-        <div class="hero-right">
-            <div class="profile-img-wrap">
-                <img src="https://github.com/arhantbarmate.png"
-                     alt="Arhant Barmate — Founder, Orthonode Infrastructure Labs"
-                     width="380" height="260"
-                     loading="eager">
-                <div class="profile-img-overlay" aria-hidden="true"></div>
-                <div class="profile-status">
-                    <span class="live-dot"></span>
-                    <span>AVAILABLE · OPEN TO COLLABORATION</span>
-                </div>
-            </div>
-            <div class="profile-meta">
-                <div class="profile-name-block">
-                    <strong>Arhant Barmate</strong>
-                    <span>Founder & Lead Engineer @ Orthonode Infrastructure Labs</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">Location</span>
-                    <span class="detail-val">Bhopal, Madhya Pradesh, IN</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">Focus</span>
-                    <span class="detail-val">DePIN · Hardware Verification · Edge Infra</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">SHA Status</span>
-                    <span class="detail-val val-blue">Prototype Live · Sepolia</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">Grant Status</span>
-                    <span class="detail-val val-amber">$49K USD Applied (Stylus Sprint)</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">Primary Stack</span>
-                    <span class="detail-val">Rust · Arbitrum Stylus · ESP32</span>
-                </div>
-                <div class="profile-detail-row">
-                    <span class="detail-key">Contact</span>
-                    <span class="detail-val"><a href="mailto:infrastructure@orthonode.xyz">infrastructure@orthonode.xyz</a></span>
-                </div>
-            </div>
+      <!-- IMAGE COLUMN -->
+      <div class="hic">
+        <div class="pf">
+          <div class="pgw"></div>
+          <div class="pra"></div>
+          <div class="prb"></div>
+          <img src="og-image.png" alt="Arhant Barmate — Founder, Orthonode Systems" class="pfoto">
         </div>
-    </section>
-
-    <!-- ── TERMINAL STATUS ── -->
-    <section class="terminal-section" aria-label="Current status">
-        <div class="terminal" role="region" aria-label="Status log">
-            <div class="terminal-bar">
-                <div class="term-dots" aria-hidden="true">
-                    <span class="term-dot r"></span>
-                    <span class="term-dot y"></span>
-                    <span class="term-dot g"></span>
-                </div>
-                <span>arhant@orthonode ~ — current_status.log</span>
-                <span>2026-02-18</span>
-            </div>
-            <div class="terminal-body">
-                <div class="t-line">
-                    <span class="t-prompt">→</span>
-                    <span class="t-cmd">cat <span style="color:var(--ink-3)">./status/2026-02-18.log</span></span>
-                </div>
-                <span class="t-blank"></span>
-                <div class="t-line">
-                    <span class="t-comment t-key">// SHA — Stylus Hardware Anchor</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">PROTOTYPE_STATUS</span>
-                    <span class="t-val-blue">deployed on Arbitrum Sepolia (testnet)</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">CONTRACT</span>
-                    <span class="t-val-blue" style="font-size:0.78rem">0xd661a1ab8cefaacd78f4b968670c3bc438415615</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">GAS_BATCH_N50</span>
-                    <span class="t-val-green">12,523 gas/receipt (amortized)</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">TEST_VECTORS</span>
-                    <span class="t-val-green">10,000+ · 100% keccak-256 parity</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">GRANT_APPLICATION</span>
-                    <span class="t-val-amber">$49,000 USD submitted · Stylus Sprint · Questbook · Feb 2026</span>
-                </div>
-                <span class="t-blank"></span>
-                <div class="t-line">
-                    <span class="t-comment t-key">// NEXUS — Sovereign Edge Gateway</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">PHASE</span>
-                    <span class="t-val-green">1.4.0 ACTIVE · 1M TX stress test validated · 0% corruption</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">TPS_BASELINE</span>
-                    <span class="t-val-green">50–60 TPS on edge hardware</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">NEXT</span>
-                    <span class="t-val-amber">Phase 2.0 — peaq ID / IoTeX ioID / multi-chain anchoring</span>
-                </div>
-                <span class="t-blank"></span>
-                <div class="t-line">
-                    <span class="t-comment t-key">// OAP — Integrity Governance Engine</span>
-                </div>
-                <div class="t-line">
-                    <span class="t-key" style="min-width:200px">STATUS</span>
-                    <span class="t-val-amber">in development · structural model published · no deployment yet</span>
-                </div>
-                <span class="t-blank"></span>
-                <div class="t-line">
-                    <span class="t-prompt" style="color:var(--green)">✓</span>
-                    <span class="t-val-green">all systems nominal · open to collaboration</span>
-                </div>
-            </div>
+        <a href="https://orthonode.xyz" target="_blank" rel="noopener" class="cbadge">
+          <img src="logo.png" alt="Orthonode Systems logo">
+          <span><em>Orthonode Systems™</em></span>
+        </a>
+        <div class="loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Bhopal, Madhya Pradesh, India
         </div>
-    </section>
-
-    <!-- ── METRICS ── -->
-    <div class="metrics" role="region" aria-label="Project metrics">
-        <div class="metric">
-            <div class="metric-val blue">12.5k</div>
-            <div class="metric-label">Gas / Receipt<br>(Batch N=50)</div>
-        </div>
-        <div class="metric">
-            <div class="metric-val green">10K+</div>
-            <div class="metric-label">Test Vectors<br>Validated</div>
-        </div>
-        <div class="metric">
-            <div class="metric-val">1M</div>
-            <div class="metric-label">Nexus TX Stress<br>Test (0% error)</div>
-        </div>
-        <div class="metric">
-            <div class="metric-val amber">$49K</div>
-            <div class="metric-label">Grant Applied<br>(Stylus Sprint)</div>
-        </div>
-        <div class="metric">
-            <div class="metric-val green">3</div>
-            <div class="metric-label">Active<br>Protocols</div>
-        </div>
+      </div>
     </div>
 
-    <!-- ── PROJECTS ── -->
-    <section class="projects-section" aria-labelledby="projects-heading">
-        <div class="sec-head">
-            <span class="sec-num">01</span>
-            <h2 class="sec-title" id="projects-heading">Protocols & Products</h2>
-            <span class="sec-line" aria-hidden="true"></span>
+    <!-- scroll hint -->
+    <div class="shi">
+      <span>SCROLL</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <div id="metrics">
+    <div class="mbar revs">
+      <div class="mc">
+        <span class="mn" data-to="12564" data-sfx=" gas">0</span>
+        <span class="ml">SHA GAS · BATCH N=50</span>
+      </div>
+      <div class="mc">
+        <span class="mn g" data-to="10000" data-sfx="+">0</span>
+        <span class="ml">TEST VECTORS</span>
+      </div>
+      <div class="mc">
+        <span class="mn p" data-to="1000000" data-sfx="">0</span>
+        <span class="ml">NEXUS STRESS TX</span>
+      </div>
+      <div class="mc">
+        <span class="mn a" data-to="5" data-sfx=" CHAINS">0</span>
+        <span class="ml">ACTIVE DEPLOYMENTS</span>
+      </div>
+      <div class="mc">
+        <span class="mn" data-to="100" data-sfx="%">0</span>
+        <span class="ml">KECCAK-256 PARITY</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:60px"></div>
+  <div class="dv"></div>
+
+  <!-- STATUS -->
+  <div class="sec" id="status">
+    <div class="rev">
+      <div class="sl">LIVE PROTOCOLS</div>
+      <div class="st">System Status</div>
+    </div>
+    <div class="sg revs">
+
+      <div class="sc2">
+        <div class="stop"><span class="schn">ARBITRUM STYLUS</span><span class="badge bl">TESTNET LIVE</span></div>
+        <div class="sname">SHA</div>
+        <div class="ssub">Stylus Hardware Anchor</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">GAS_BATCH_N50</span><span class="sv">12,564 gas/receipt</span></div>
+          <div class="srow"><span class="sk">SINGLE_VERIFY</span><span class="sv">118,935 gas</span></div>
+          <div class="srow"><span class="sk">TEST_VECTORS</span><span class="sv g">10,000+ · 100% parity</span></div>
+          <div class="srow"><span class="sk">GRANT</span><span class="sv p">$25K · Under Review</span></div>
         </div>
+      </div>
 
-        <div class="project-list">
-            <!-- SHA -->
-            <a href="https://orthonode.xyz/sha.html" target="_blank" rel="noopener" class="project-row" style="display:grid;">
-                <div class="proj-label">
-                    <span class="proj-tag sha">SHA</span>
-                    <span class="proj-status-chip live">
-                        <span style="width:5px;height:5px;background:var(--blue);border-radius:50%;"></span>
-                        Testnet Live
-                    </span>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-title">Stylus Hardware Anchor</div>
-                    <p class="proj-desc">Reusable hardware identity verification primitive for Arbitrum Stylus. Binds ESP32-S3 eFuse silicon identifiers to on-chain execution — enabling deterministic device identity, replay-safe receipts, and firmware-governed access control. Prototype deployed on Arbitrum Sepolia. $49K USD Stylus Sprint grant application submitted.</p>
-                    <div class="proj-tags">
-                        <span class="ptag">Rust / WASM</span>
-                        <span class="ptag">Arbitrum Stylus</span>
-                        <span class="ptag">ESP32-S3 eFuse</span>
-                        <span class="ptag">Keccak-256</span>
-                        <span class="ptag">Python SDK</span>
-                        <span class="ptag">MIT License</span>
-                    </div>
-                    <span class="proj-link">View Protocol → orthonode.xyz/sha.html ↗</span>
-                </div>
-            </a>
-
-            <!-- Nexus -->
-            <a href="https://orthonode.xyz/nexus.html" target="_blank" rel="noopener" class="project-row" style="display:grid;">
-                <div class="proj-label">
-                    <span class="proj-tag nexus">NEXUS</span>
-                    <span class="proj-status-chip active">
-                        <span style="width:5px;height:5px;background:var(--green);border-radius:50%;animation:blink 2s infinite;"></span>
-                        Phase 1.4.0
-                    </span>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-title">Nexus Protocol — Sovereign Edge Gateway</div>
-                    <p class="proj-desc">Universal zero-trust execution layer for DePIN hardware. Verify-then-Execute model with Cloudflare Zero Trust ingress, fail-closed Sentry perimeter, 60/30/10 economic invariant enforced at the protocol layer. 1M transaction stress test validated (0% corruption, 50–60 TPS baseline). Phase 2.0 targets peaq ID and IoTeX ioID integration.</p>
-                    <div class="proj-tags">
-                        <span class="ptag">Zero-Trust Ingress</span>
-                        <span class="ptag">SQLite WAL</span>
-                        <span class="ptag">Fail-Closed</span>
-                        <span class="ptag">ARMv8</span>
-                        <span class="ptag">FastAPI Brain</span>
-                        <span class="ptag">Apache 2.0</span>
-                    </div>
-                    <span class="proj-link">View Protocol → orthonode.xyz/nexus.html ↗</span>
-                </div>
-            </a>
-
-            <!-- OAP -->
-            <a href="https://orthonode.xyz/oap.html" target="_blank" rel="noopener" class="project-row" style="display:grid;">
-                <div class="proj-label">
-                    <span class="proj-tag oap">OAP</span>
-                    <span class="proj-status-chip dev">
-                        <span style="width:5px;height:5px;background:var(--amber);border-radius:50%;"></span>
-                        In Development
-                    </span>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-title">OAP — Integrity Governance Engine</div>
-                    <p class="proj-desc">Deterministic motion validation and lifecycle trust governance for mobility, robotics, and DePIN systems. Physics envelope enforcement, non-linear trust scoring, identity clone containment, adaptive checkpoint anchoring. OAP emits verifiable integrity state — partners apply economic logic. Design architecture and structural model published.</p>
-                    <div class="proj-tags">
-                        <span class="ptag">Physics Profiles</span>
-                        <span class="ptag">Trust Lifecycle</span>
-                        <span class="ptag">Clone Containment</span>
-                        <span class="ptag">Adaptive Anchoring</span>
-                        <span class="ptag">Append-Only History</span>
-                    </div>
-                    <span class="proj-link">View Protocol → orthonode.xyz/oap.html ↗</span>
-                </div>
-            </a>
+      <div class="sc2">
+        <div class="stop"><span class="schn">CHAIN-AGNOSTIC</span><span class="badge ba">PHASE 1.4.0</span></div>
+        <div class="sname">Nexus</div>
+        <div class="ssub">Sovereign Edge Gateway</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">TPS_BASELINE</span><span class="sv">50–60 TPS on edge</span></div>
+          <div class="srow"><span class="sk">STRESS_TEST</span><span class="sv g">1M TX · 0% corruption</span></div>
+          <div class="srow"><span class="sk">NEXT</span><span class="sv">Phase 2.0 · peaq / IoTeX</span></div>
         </div>
-    </section>
+      </div>
 
-    <!-- ── TECH STACK ── -->
-    <section class="stack-section" aria-labelledby="stack-heading">
-        <div class="sec-head">
-            <span class="sec-num">02</span>
-            <h2 class="sec-title" id="stack-heading">Technical Stack</h2>
-            <span class="sec-line" aria-hidden="true"></span>
+      <div class="sc2">
+        <div class="stop"><span class="schn">TON</span><span class="badge bl">TESTNET LIVE</span></div>
+        <div class="sname">TON-SHA</div>
+        <div class="ssub">Agent Trust Primitive</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">COST</span><span class="sv">0.03 TON/op</span></div>
+          <div class="srow"><span class="sk">LANG</span><span class="sv">Tact 1.6</span></div>
+          <div class="srow"><span class="sk">GATES</span><span class="sv g">4-gate trust primitive</span></div>
         </div>
-        <div class="stack-grid">
-            <div class="stack-col">
-                <div class="stack-col-head">Languages</div>
-                <div class="stack-items">
-                    <span class="stack-item">Rust</span>
-                    <span class="stack-item">C / C++</span>
-                    <span class="stack-item">Python</span>
-                    <span class="stack-item">Solidity</span>
-                    <span class="stack-item">JavaScript / TypeScript</span>
-                </div>
-            </div>
-            <div class="stack-col">
-                <div class="stack-col-head">Blockchain & Protocol</div>
-                <div class="stack-items">
-                    <span class="stack-item">Arbitrum Stylus</span>
-                    <span class="stack-item">WASM Execution</span>
-                    <span class="stack-item">Smart Contracts</span>
-                    <span class="stack-item">Keccak-256 / ECDSA</span>
-                    <span class="stack-item">peaq · IoTeX (Phase 2)</span>
-                </div>
-            </div>
-            <div class="stack-col">
-                <div class="stack-col-head">Hardware & Embedded</div>
-                <div class="stack-items">
-                    <span class="stack-item">ESP32-S3 eFuse</span>
-                    <span class="stack-item">ARMv8 / Cortex-A53</span>
-                    <span class="stack-item">Embedded Systems</span>
-                    <span class="stack-item">Firmware Engineering</span>
-                    <span class="stack-item">Vibration Entropy</span>
-                </div>
-            </div>
-            <div class="stack-col">
-                <div class="stack-col-head">Infrastructure & Focus</div>
-                <div class="stack-items">
-                    <span class="stack-item">DePIN Networks</span>
-                    <span class="stack-item">Zero-Trust Architecture</span>
-                    <span class="stack-item">Applied Cryptography</span>
-                    <span class="stack-item">Hardware Security</span>
-                    <span class="stack-item">Edge Compute</span>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
 
-    <!-- ── CONNECT ── -->
-    <section class="connect-section" aria-labelledby="connect-heading">
-        <div class="sec-head">
-            <span class="sec-num">03</span>
-            <h2 class="sec-title" id="connect-heading">Connect</h2>
-            <span class="sec-line" aria-hidden="true"></span>
+      <div class="sc2">
+        <div class="stop"><span class="schn">POLKADOT HUB</span><span class="badge ba">TESTNET LIVE</span></div>
+        <div class="sname">DotLend</div>
+        <div class="ssub">Money Market · Polkadot Hub</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">CONTRACTS</span><span class="sv">13 deployed</span></div>
+          <div class="srow"><span class="sk">TESTS</span><span class="sv g">108 passing</span></div>
+          <div class="srow"><span class="sk">ZK</span><span class="sv p">Noir solvency circuit</span></div>
         </div>
-        <div class="connect-grid">
-            <a href="https://github.com/arhantbarmate" class="connect-card" target="_blank" rel="noopener">
-                <span class="connect-platform">GitHub</span>
-                <span class="connect-handle">arhantbarmate</span>
-                <span class="connect-desc">Source code, repositories, SHA & Nexus Protocol</span>
-                <span class="connect-arrow">→ github.com/arhantbarmate</span>
-            </a>
-            <a href="https://www.linkedin.com/in/arhant-barmate-5710163aa/" class="connect-card" target="_blank" rel="noopener">
-                <span class="connect-platform">LinkedIn</span>
-                <span class="connect-handle">Arhant Barmate</span>
-                <span class="connect-desc">Professional background and engineering work</span>
-                <span class="connect-arrow">→ linkedin.com/in/arhant-barmate</span>
-            </a>
-            <a href="https://x.com/Arhant_Dev" class="connect-card" target="_blank" rel="noopener">
-                <span class="connect-platform">X / Twitter</span>
-                <span class="connect-handle">@Arhant_Dev</span>
-                <span class="connect-desc">Technical updates and ecosystem discussions</span>
-                <span class="connect-arrow">→ x.com/Arhant_Dev</span>
-            </a>
-            <a href="https://instagram.com/arhantofficial/" class="connect-card" target="_blank" rel="noopener">
-                <span class="connect-platform">Instagram</span>
-                <span class="connect-handle">@arhantofficial</span>
-                <span class="connect-desc">Personal profile</span>
-                <span class="connect-arrow">→ instagram.com/arhantofficial</span>
-            </a>
-            <a href="mailto:infrastructure@orthonode.xyz" class="connect-card">
-                <span class="connect-platform">Email</span>
-                <span class="connect-handle">Direct Contact</span>
-                <span class="connect-desc">infrastructure@orthonode.xyz — collaboration, integration, technical brief requests</span>
-                <span class="connect-arrow">→ infrastructure@orthonode.xyz</span>
-            </a>
-            <a href="https://orthonode.xyz" class="connect-card" target="_blank" rel="noopener">
-                <span class="connect-platform">Company</span>
-                <span class="connect-handle">Orthonode Labs</span>
-                <span class="connect-desc">Full product documentation and technical architecture for SHA, OAP, Nexus</span>
-                <span class="connect-arrow">→ orthonode.xyz</span>
-            </a>
+      </div>
+
+      <div class="sc2">
+        <div class="stop"><span class="schn">BITTENSOR</span><span class="badge ba">PHASE 1 COMPLETE</span></div>
+        <div class="sname">INVARIANT</div>
+        <div class="ssub">NTS Trust Score Subnet</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">STATUS</span><span class="sv">Phase 1 complete</span></div>
+          <div class="srow"><span class="sk">TESTNET</span><span class="sv g">March 2026</span></div>
         </div>
-    </section>
+      </div>
 
-</div><!-- /wrap -->
-
-    <!-- ── FOOTER ── -->
-    <footer>
-        <div class="wrap">
-            <div class="footer-inner">
-                <div class="footer-left">
-                    <strong>Arhant Barmate</strong> · Bhopal, Madhya Pradesh, India<br>
-                    Founder @ Orthonode Infrastructure Labs Private Limited (NIC 72900)
-                </div>
-                <div class="footer-right">
-                    <a href="https://orthonode.xyz/site-index.html" target="_blank">Site Index</a>
-                    <a href="https://orthonode.xyz/terms.html" target="_blank">Terms</a>
-                    <a href="https://orthonode.xyz/privacy.html" target="_blank">Privacy</a>
-                    <a href="/site-index.html">Portfolio Index</a>
-                </div>
-            </div>
+      <div class="sc2">
+        <div class="stop"><span class="schn">CHAIN-AGNOSTIC</span><span class="badge bd2">IN DEVELOPMENT</span></div>
+        <div class="sname">OAP</div>
+        <div class="ssub">Integrity Governance Engine</div>
+        <div class="srows">
+          <div class="srow"><span class="sk">STATUS</span><span class="sv a">Design published</span></div>
+          <div class="srow"><span class="sk">TYPE</span><span class="sv">PROPRIETARY</span></div>
         </div>
-    </footer>
+      </div>
 
-</div><!-- /page -->
+    </div>
+  </div>
+
+  <div class="dv"></div>
+
+  <!-- PROTOCOLS -->
+  <div class="sec" id="protocols">
+    <div class="rev">
+      <div class="sl">ACTIVE PROTOCOLS</div>
+      <div class="st">What I Build</div>
+    </div>
+
+    <div class="pg revs">
+
+      <!-- SHA -->
+      <div class="pc">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(41,157,255,0.1);border:1px solid rgba(41,157,255,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#299dff" stroke-width="1.5">
+              <rect x="9" y="9" width="6" height="6" rx="1"/>
+              <path d="M9 2v2M12 2v2M15 2v2M9 20v2M12 20v2M15 20v2M2 9h2M2 12h2M2 15h2M20 9h2M20 12h2M20 15h2"/>
+              <rect x="5" y="5" width="14" height="14" rx="2"/>
+            </svg>
+          </div>
+          <span class="chain arb">Arbitrum</span>
+        </div>
+        <div class="pname">SHA</div>
+        <div class="psub">Stylus Hardware Anchor</div>
+        <p class="pdesc">Hardware Sybil resistance primitive for Arbitrum Stylus. Binds ESP32-S3 eFuse silicon identifiers to on-chain execution — deterministic device identity, replay-safe receipts, firmware-governed access control. <strong>$25K Stylus Sprint grant under review.</strong></p>
+        <div class="ctr"><em>CONTRACT</em>0xd661a1ab8cefaacd78f4b968670c3bc438415615</div>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">Rust / WASM</span><span class="tag">Arbitrum Stylus</span>
+          <span class="tag">ESP32-S3 eFuse</span><span class="tag">Keccak-256</span><span class="tag">MIT</span>
+        </div>
+      </div>
+
+      <!-- Nexus -->
+      <div class="pc cp">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="chain agn">Chain-agnostic</span>
+        </div>
+        <div class="pname">Nexus Protocol</div>
+        <div class="psub">Sovereign Edge Gateway · Phase 1.4.0</div>
+        <p class="pdesc">Universal zero-trust execution layer for DePIN hardware. Verify-then-Execute model with Cloudflare Zero Trust ingress, fail-closed Sentry perimeter, 60/30/10 economic invariant enforced at the protocol layer. <strong>1M TX stress test · 0% corruption.</strong></p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">Zero-Trust</span><span class="tag">SQLite WAL</span>
+          <span class="tag">Fail-Closed</span><span class="tag">ARMv8</span>
+          <span class="tag">FastAPI</span><span class="tag">Apache 2.0</span>
+        </div>
+      </div>
+
+      <!-- OAP -->
+      <div class="pc ce">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <span class="chain agn">Proprietary</span>
+        </div>
+        <div class="pname">OAP</div>
+        <div class="psub">Integrity Governance Engine</div>
+        <p class="pdesc">Deterministic motion validation and lifecycle trust governance for mobility, robotics, and DePIN. Physics envelope enforcement, non-linear trust scoring, identity clone containment, adaptive checkpoint anchoring.</p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">Physics Profiles</span><span class="tag">Trust Lifecycle</span>
+          <span class="tag">Clone Containment</span><span class="tag">Adaptive Anchoring</span>
+        </div>
+      </div>
+
+      <!-- TON-SHA -->
+      <div class="pc ct">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(0,136,204,0.1);border:1px solid rgba(0,136,204,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0088cc" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/>
+            </svg>
+          </div>
+          <span class="chain ton">TON</span>
+        </div>
+        <div class="pname">TON-SHA</div>
+        <div class="psub">Agent Trust Primitive · TON</div>
+        <p class="pdesc">Four-gate cryptographic trust primitive for TON agents and DePIN nodes. SHA-256 digest verification, replay protection, firmware governance. <strong>0.03 TON/op.</strong> Tact 1.6. Live on TON testnet.</p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">Tact 1.6</span><span class="tag">SHA-256</span>
+          <span class="tag">4-gate</span><span class="tag">Replay Protection</span>
+        </div>
+      </div>
+
+      <!-- DotLend -->
+      <div class="pc cpk">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(230,0,122,0.1);border:1px solid rgba(230,0,122,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e6007a" stroke-width="1.5">
+              <circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <span class="chain dot">Polkadot</span>
+        </div>
+        <div class="pname">DotLend</div>
+        <div class="psub">Money Market · Polkadot Hub</div>
+        <p class="pdesc">First money market on Polkadot Hub. Deposit vDOT or WPAS as collateral, borrow HOLLAR at up to 70% LTV. ZK solvency circuit in Noir. <strong>13 contracts · 108 tests passing.</strong> Live on Polkadot Hub TestNet.</p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">PolkaVM</span><span class="tag">Noir ZK</span>
+          <span class="tag">Bifrost vDOT</span><span class="tag">70% LTV</span>
+        </div>
+      </div>
+
+      <!-- INVARIANT -->
+      <div class="pc cb">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(82,181,174,0.1);border:1px solid rgba(82,181,174,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#52b5ae" stroke-width="1.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <span class="chain bit">Bittensor</span>
+        </div>
+        <div class="pname">INVARIANT</div>
+        <div class="psub">NTS Trust Score Subnet</div>
+        <p class="pdesc">Bittensor subnet producing cryptographically-verified INVARIANT Trust Score (NTS) per miner. Three layers: SHA hardware identity, execution receipts, OAP lifecycle governance. <strong>Phase 1 complete · Testnet March 2026.</strong></p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">NTS Score</span><span class="tag">SHA Integration</span>
+          <span class="tag">OAP Governance</span><span class="tag">Bittensor</span>
+        </div>
+      </div>
+
+      <!-- TIX-DAO -->
+      <div class="pc">
+        <div class="ptop">
+          <div class="pico" style="background:rgba(153,69,255,0.1);border:1px solid rgba(153,69,255,0.2);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9945ff" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <span class="chain sol">Solana</span>
+        </div>
+        <div class="pname">TIX-DAO</div>
+        <div class="psub">On-Chain Ticketing Governance</div>
+        <p class="pdesc">Solana SPL-Governance venue ticketing DAO. Hardware-verified NFT tickets, on-chain attendance records, and trust-anchored venue governance. Built for Graveyard Hackathon 2026.</p>
+        <div class="tags" style="margin-top:14px">
+          <span class="tag">SPL-Governance</span><span class="tag">NFT Tickets</span>
+          <span class="tag">Hardware Verified</span><span class="tag">Solana</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="dv"></div>
+
+  <!-- STACK -->
+  <div class="sec" id="stack">
+    <div class="rev">
+      <div class="sl">CAPABILITIES</div>
+      <div class="st">Tech Stack</div>
+    </div>
+    <div class="skg revs">
+      <div class="stk">
+        <div class="skl">Languages</div>
+        <div class="ski">
+          <div>Rust</div><div>C / C++</div><div>Python</div>
+          <div>Solidity</div><div>JavaScript / TypeScript</div><div>Tact (TON)</div>
+        </div>
+      </div>
+      <div class="stk">
+        <div class="skl">Blockchain</div>
+        <div class="ski">
+          <div>Arbitrum Stylus / WASM</div><div>Polkadot Hub / PolkaVM</div>
+          <div>TON / Tact</div><div>Bittensor / Subtensor</div>
+          <div>Solana / SPL-Governance</div><div>Keccak-256 / ECDSA</div>
+        </div>
+      </div>
+      <div class="stk">
+        <div class="skl">Hardware & Embedded</div>
+        <div class="ski">
+          <div>ESP32-S3 eFuse</div><div>ARMv8 / Cortex-A53</div>
+          <div>Firmware Engineering</div><div>Silicon Identity Binding</div>
+          <div>Vibration Entropy</div>
+        </div>
+      </div>
+      <div class="stk">
+        <div class="skl">Infrastructure</div>
+        <div class="ski">
+          <div>DePIN Networks</div><div>Zero-Trust Architecture</div>
+          <div>FastAPI / Python</div><div>SQLite WAL</div>
+          <div>Cloudflare Zero Trust</div><div>Noir ZK Circuits</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dv"></div>
+
+  <!-- CONNECT -->
+  <div class="sec" id="connect">
+    <div class="rev">
+      <div class="sl">CONTACT</div>
+      <div class="st">Connect</div>
+    </div>
+    <div class="cng revs">
+
+      <a href="https://github.com/arhantbarmate" target="_blank" rel="noopener" class="cn">
+        <div class="cni">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <div><div class="cnp">GitHub</div><div class="cnh">github.com/arhantbarmate</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://twitter.com/Arhant_Dev" target="_blank" rel="noopener" class="cn">
+        <div class="cni">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24H16.17l-4.71-6.23-5.4 6.23H2.74l7.74-8.87L2.06 2.25H8.08l4.26 5.63 5.9-5.63zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg>
+        </div>
+        <div><div class="cnp">X / Twitter</div><div class="cnh">@Arhant_Dev</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://linkedin.com/in/arhant-barmate-5710163aa" target="_blank" rel="noopener" class="cn">
+        <div class="cni">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </div>
+        <div><div class="cnp">LinkedIn</div><div class="cnh">Arhant Barmate</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://instagram.com/arhantofficial" target="_blank" rel="noopener" class="cn">
+        <div class="cni">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <div><div class="cnp">Instagram</div><div class="cnh">@arhantofficial</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="https://orthonode.xyz" target="_blank" rel="noopener" class="cn">
+        <div class="cni" style="background:rgba(139,92,246,0.08);border-color:rgba(139,92,246,0.18);">
+          <img src="logo.png" alt="Orthonode" style="width:22px;height:22px;object-fit:contain;border-radius:3px;">
+        </div>
+        <div><div class="cnp">Orthonode Systems™</div><div class="cnh">orthonode.xyz</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="mailto:infrastructure@orthonode.xyz" class="cn">
+        <div class="cni">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </div>
+        <div><div class="cnp">Email</div><div class="cnh">infrastructure@orthonode.xyz</div></div>
+        <svg class="cna" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="fi">
+      <div>
+        <span style="color:var(--blue);font-weight:700">ARHANT BARMATE</span>
+        &nbsp;·&nbsp;<a href="https://orthonode.xyz" target="_blank" rel="noopener">Orthonode Systems™</a>
+        &nbsp;·&nbsp;Bhopal, India
+      </div>
+      <div>
+        Static HTML · March 2026 ·
+        <a href="sitemap.xml">Sitemap</a>
+        &nbsp;·&nbsp;
+        <a href="site-index.html">Site Index</a>
+      </div>
+      <div>
+        <a href="https://github.com/orthonode" target="_blank" rel="noopener" style="color:var(--text3)">github.com/orthonode</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- SCRIPTS -->
+<script>
+/* ══════════════════════════════════════
+   CONSTELLATION
+══════════════════════════════════════ */
+(function () {
+  const cv = document.getElementById('cv');
+  const cx = cv.getContext('2d');
+  let W, H, pts;
+  const N = 150, LINK = 135, ML = 185;
+  let mx = -9999, my = -9999;
+
+  function resize() { W = cv.width = window.innerWidth; H = cv.height = window.innerHeight; }
+
+  const COLS = ['0,212,255','139,92,246','200,220,255','255,255,255','16,185,129'];
+
+  class P {
+    constructor() { this.init(true); }
+    init(r) {
+      this.x = Math.random() * W; this.y = r ? Math.random() * H : -8;
+      this.vx = (Math.random() - 0.5) * 0.35; this.vy = (Math.random() - 0.5) * 0.35;
+      this.r = Math.random() * 1.6 + 0.5; this.op = Math.random() * 0.55 + 0.2;
+      this.ph = Math.random() * Math.PI * 2; this.ps = Math.random() * 0.018 + 0.006;
+      this.c = COLS[Math.floor(Math.random() * COLS.length)];
+    }
+    tick() {
+      const dx = mx - this.x, dy = my - this.y, d = Math.sqrt(dx*dx+dy*dy);
+      if (d < ML) { const f=(ML-d)/ML*0.0009; this.vx+=dx*f; this.vy+=dy*f; }
+      const spd = Math.sqrt(this.vx*this.vx+this.vy*this.vy);
+      if (spd > 0.9) { this.vx*=0.9/spd; this.vy*=0.9/spd; }
+      this.x+=this.vx; this.y+=this.vy; this.ph+=this.ps;
+      if (this.x<-20) this.x=W+20; if (this.x>W+20) this.x=-20;
+      if (this.y<-20) this.y=H+20; if (this.y>H+20) this.y=-20;
+    }
+    draw() {
+      const o = this.op*(0.65+Math.sin(this.ph)*0.35);
+      cx.beginPath(); cx.arc(this.x,this.y,this.r,0,Math.PI*2);
+      cx.fillStyle=`rgba(${this.c},${o})`; cx.fill();
+    }
+  }
+
+  function init() { resize(); pts = Array.from({length:N},()=>new P()); }
+
+  function links() {
+    for (let i=0;i<N;i++) {
+      for (let j=i+1;j<N;j++) {
+        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.sqrt(dx*dx+dy*dy);
+        if (d<LINK) {
+          const o=(1-d/LINK)*0.22;
+          cx.beginPath(); cx.moveTo(pts[i].x,pts[i].y); cx.lineTo(pts[j].x,pts[j].y);
+          cx.strokeStyle=`rgba(0,212,255,${o})`; cx.lineWidth=0.5; cx.stroke();
+        }
+      }
+      const dx=mx-pts[i].x, dy=my-pts[i].y, d=Math.sqrt(dx*dx+dy*dy);
+      if (d<ML) {
+        const o=(1-d/ML)*0.5;
+        cx.beginPath(); cx.moveTo(pts[i].x,pts[i].y); cx.lineTo(mx,my);
+        cx.strokeStyle=`rgba(139,92,246,${o})`; cx.lineWidth=0.7; cx.stroke();
+      }
+    }
+  }
+
+  function frame() {
+    cx.clearRect(0,0,W,H); links();
+    pts.forEach(p=>{p.tick();p.draw();});
+    requestAnimationFrame(frame);
+  }
+
+  window.addEventListener('resize', resize);
+  document.addEventListener('mousemove', e=>{mx=e.clientX;my=e.clientY;});
+  document.addEventListener('mouseleave',()=>{mx=-9999;my=-9999;});
+  document.addEventListener('touchmove', e=>{mx=e.touches[0].clientX;my=e.touches[0].clientY;},{passive:true});
+  init(); frame();
+})();
+
+/* ══════════════════════════════════════
+   WATER-DROP RIPPLE
+══════════════════════════════════════ */
+document.addEventListener('click', function(e) {
+  [[80,'rgba(0,212,255,0.16)','rgba(0,212,255,0.35)',0.9],
+   [28,'rgba(0,212,255,0.1)','rgba(0,212,255,0.65)',0.55]
+  ].forEach(([sz,bg,bc,dur])=>{
+    const el=document.createElement('div');
+    el.className='rpl';
+    el.style.cssText=`width:${sz}px;height:${sz}px;left:${e.clientX-sz/2}px;top:${e.clientY-sz/2}px;background:${bg};border:1px solid ${bc};animation-duration:${dur}s;`;
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(), dur*1000+100);
+  });
+});
+
+/* ══════════════════════════════════════
+   TYPEWRITER
+══════════════════════════════════════ */
+(function(){
+  const lines=[
+    'for the Decentralized Stack.',
+    'with Rust + Arbitrum Stylus.',
+    'across 5 blockchain networks.',
+    'from Bhopal, India.',
+    '— zero trust, fail-closed.',
+    'at the silicon layer.',
+    'for DePIN hardware.',
+  ];
+  const el=document.getElementById('tw');
+  let li=0,ci=0,del=false,pause=0;
+  function tick(){
+    const line=lines[li];
+    if(pause>0){pause--;setTimeout(tick,80);return;}
+    if(!del){
+      ci++;el.textContent=line.slice(0,ci);
+      if(ci>=line.length){del=true;pause=28;}
+      setTimeout(tick,58);
+    } else {
+      ci--;el.textContent=line.slice(0,ci);
+      if(ci<=0){del=false;li=(li+1)%lines.length;pause=10;}
+      setTimeout(tick,32);
+    }
+  }
+  setTimeout(tick,1200);
+})();
+
+/* ══════════════════════════════════════
+   COUNTERS
+══════════════════════════════════════ */
+function fmt(n,sfx){
+  if(n>=1000000) return (n/1000000).toFixed(0)+'M'+sfx;
+  if(n>=10000)   return n.toLocaleString()+sfx;
+  return n.toLocaleString()+sfx;
+}
+function runCounter(el){
+  const to=parseInt(el.dataset.to), sfx=el.dataset.sfx||'', dur=1600, t0=performance.now();
+  function step(now){
+    const p=Math.min((now-t0)/dur,1), e=1-Math.pow(1-p,3);
+    el.textContent=fmt(Math.round(e*to),sfx);
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+/* ══════════════════════════════════════
+   SCROLL REVEAL + COUNTER TRIGGER
+══════════════════════════════════════ */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add('on');
+    entry.target.querySelectorAll('[data-to]').forEach(runCounter);
+    obs.unobserve(entry.target);
+  });
+},{threshold:0.1});
+
+document.querySelectorAll('.rev,.revs').forEach(el=>obs.observe(el));
+
+/* ══════════════════════════════════════
+   NAVBAR SCROLL
+══════════════════════════════════════ */
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('sc',window.scrollY>50);
+},{passive:true});
+</script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Robots.txt for Arhant Barmate Personal Site
 # Domain: https://arhantbarmate.github.io
-# Last Updated: 2026-02-09
+# Last Updated: 2026-03-15
 
 User-agent: *
 Allow: /
@@ -8,7 +8,8 @@ Allow: /index.html
 
 # Allow all media assets
 Allow: /og-image.png
-Allow: /twitter-card.png
+Allow: /logo.png
+Allow: /manifest.json
 
 # Block if any admin/dev directories exist
 Disallow: /.git/

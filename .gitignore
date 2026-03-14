@@ -1,0 +1,23 @@
+# arhantbarmate.github.io
+# Static HTML portfolio — no build system
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local tooling — never push
+.claude/
+CLAUDE.md
+docs/session/
+docs/prd/
+docs/design/
+docs/plan/
+docs/performance/
+docs/coverage/
+
+# Playwright
+playwright-report/
+test-results/

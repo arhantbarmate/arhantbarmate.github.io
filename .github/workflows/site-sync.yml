@@ -1,0 +1,52 @@
+name: SEO Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "sitemap.xml"
+      - "robots.txt"
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run SEO/GEO audit
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Run /site-seo to audit index.html for SEO and GEO compliance.
+
+            Check for:
+            - <title> tag present (format: "[Name] | Arhant Barmate")
+            - <meta name="description"> present, 120-160 characters
+            - <link rel="canonical" href="https://arhantbarmate.github.io/"> present
+            - <meta name="author" content="Arhant Barmate"> present
+            - <meta name="robots" content="index, follow"> present
+            - Open Graph tags complete (including og:image pointing to og-image.png)
+            - Twitter Card tags complete (summary_large_image)
+            - JSON-LD with Person schema (Arhant Barmate as author)
+            - Mobile viewport meta tag present
+            - <h1> exists exactly once
+            - No $49,000 grant figure (SHA grant is $25,000)
+            - SHA benchmarks: 12,523 / 118,935 / 10,000+ / 100%
+            - SHA contract: 0xd661a1ab8cefaacd78f4b968670c3bc438415615
+            - google73e927487bf1b8db.html present
+            - og-image.png present
+
+            Output results in format:
+            CHECK: [name]
+            STATUS: PASS / FAIL
+            FILE: [filename:line if FAIL]
+            DETAIL: [exact issue]
+
+            Print: "X/Y checks PASS — [N] FAIL items"
+
+            If any FAIL items exist, list them clearly so they can be fixed in the next commit.
+            Do NOT modify any files — audit only.

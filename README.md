@@ -30,7 +30,7 @@ Infrastructure engineer specializing in Rust, blockchain protocols, and embedded
 | Test vectors validated | 10,000+ |
 | Keccak-256 parity | 100% |
 | Contract (Arbitrum Sepolia) | `0xd661a1ab8cefaacd78f4b968670c3bc438415615` |
-| Grant application | $49,000 USD · Stylus Sprint · Questbook · Feb 2026 |
+| Grant application | $25,000 USD · Stylus Sprint · Questbook · Feb 2026 |
 | License | MIT |
 
 ---
@@ -52,7 +52,7 @@ Reusable hardware identity verification primitive for Arbitrum Stylus. Binds ESP
 - **Prototype:** Deployed on Arbitrum Sepolia
 - **Gas (amortized):** 12.5k gas/receipt at N=50 batch
 - **Test coverage:** 10,000+ vectors, 100% Keccak-256 parity  
-- **Grant:** $49,000 USD application submitted to Stylus Sprint (pending)
+- **Grant:** $25,000 USD application submitted to Stylus Sprint (pending)
 - **License:** MIT
 
 ### [Nexus Protocol](https://github.com/arhantbarmate/nexus-core)

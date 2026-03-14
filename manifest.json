@@ -1,0 +1,21 @@
+{
+  "name": "Arhant Barmate — Infrastructure Engineer",
+  "short_name": "Arhant Barmate",
+  "description": "Founder of Orthonode Systems. Building deterministic hardware verification for DePIN across Arbitrum, Polkadot, Bittensor, Solana, and TON.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05050e",
+  "theme_color": "#00d4ff",
+  "lang": "en-IN",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "og-image.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

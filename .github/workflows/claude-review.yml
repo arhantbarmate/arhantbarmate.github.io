@@ -1,0 +1,35 @@
+name: Claude Code Review
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  content-check:
+    name: Content Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for incorrect grant amount ($49,000)
+        run: |
+          if grep -r "\$49,000\|49000" --include="*.html" --include="*.md" . 2>/dev/null | grep -v ".git"; then
+            echo "ERROR: $49,000 found — SHA grant is $25,000"
+            exit 1
+          fi
+
+      - name: Check for credentials in source
+        run: |
+          if grep -r "secretKey\|PRIVATE_KEY\|SECRET_KEY" --include="*.html" --include="*.js" . 2>/dev/null | grep -v "//"; then
+            echo "ERROR: Possible credential in HTML/JS source"
+            exit 1
+          fi
+
+      - name: Verify Google Search Console verification file present
+        run: |
+          if [ ! -f "google73e927487bf1b8db.html" ]; then
+            echo "ERROR: Google Search Console verification file missing"
+            exit 1
+          fi
