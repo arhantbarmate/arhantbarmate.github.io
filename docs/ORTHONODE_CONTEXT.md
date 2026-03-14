@@ -17,7 +17,7 @@ the engineering profile behind all Orthonode projects. Separate from the org web
 
 ## Key Facts for Claude
 
-- SHA grant: $25,000 — never $49,000
+- SHA grant: $25,000 — confirmed correct by Arhant
 - SHA benchmarks are verified facts — do not change without Arhant confirmation:
   12,523 gas/receipt (N=50), 118,935 gas/single, 10,000+ vectors, 100% Keccak-256 parity
 - SHA contract: 0xd661a1ab8cefaacd78f4b968670c3bc438415615 (Arbitrum Sepolia)
