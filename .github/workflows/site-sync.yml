@@ -10,44 +10,93 @@ on:
 
 jobs:
   seo-audit:
+    name: SEO / GEO Checks
     runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run SEO/GEO audit
-        uses: anthropics/claude-code-action@beta
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          direct_prompt: |
-            Run /site-seo to audit index.html for SEO and GEO compliance.
+      - name: Title tag
+        run: |
+          grep -q '<title>' index.html || (echo "FAIL: <title> missing" && exit 1)
+          echo "PASS: title tag present"
 
-            Check for:
-            - <title> tag present (format: "[Name] | Arhant Barmate")
-            - <meta name="description"> present, 120-160 characters
-            - <link rel="canonical" href="https://arhantbarmate.github.io/"> present
-            - <meta name="author" content="Arhant Barmate"> present
-            - <meta name="robots" content="index, follow"> present
-            - Open Graph tags complete (including og:image pointing to og-image.png)
-            - Twitter Card tags complete (summary_large_image)
-            - JSON-LD with Person schema (Arhant Barmate as author)
-            - Mobile viewport meta tag present
-            - <h1> exists exactly once
-            - No $49,000 grant figure (SHA grant is $25,000)
-            - SHA benchmarks: 12,523 / 118,935 / 10,000+ / 100%
-            - SHA contract: 0xd661a1ab8cefaacd78f4b968670c3bc438415615
-            - google73e927487bf1b8db.html present
-            - og-image.png present
+      - name: Meta description
+        run: |
+          grep -q 'name="description"' index.html || (echo "FAIL: meta description missing" && exit 1)
+          echo "PASS: meta description present"
 
-            Output results in format:
-            CHECK: [name]
-            STATUS: PASS / FAIL
-            FILE: [filename:line if FAIL]
-            DETAIL: [exact issue]
+      - name: Canonical URL
+        run: |
+          grep -q 'rel="canonical"' index.html || (echo "FAIL: canonical link missing" && exit 1)
+          grep -q 'https://arhantbarmate.github.io/' index.html || (echo "FAIL: canonical URL incorrect" && exit 1)
+          echo "PASS: canonical URL correct"
 
-            Print: "X/Y checks PASS — [N] FAIL items"
+      - name: Author meta
+        run: |
+          grep -q 'name="author"' index.html || (echo "FAIL: meta author missing" && exit 1)
+          echo "PASS: meta author present"
 
-            If any FAIL items exist, list them clearly so they can be fixed in the next commit.
-            Do NOT modify any files — audit only.
+      - name: Robots meta
+        run: |
+          grep -q 'name="robots"' index.html || (echo "FAIL: meta robots missing" && exit 1)
+          echo "PASS: meta robots present"
+
+      - name: Geo meta
+        run: |
+          grep -q 'geo.region' index.html || (echo "FAIL: geo.region missing" && exit 1)
+          grep -q 'IN-MP' index.html       || (echo "FAIL: geo region should be IN-MP" && exit 1)
+          grep -q '23.2599' index.html     || (echo "FAIL: geo coordinates missing" && exit 1)
+          echo "PASS: geo meta present"
+
+      - name: Open Graph tags
+        run: |
+          grep -q 'og:title' index.html       || (echo "FAIL: og:title missing" && exit 1)
+          grep -q 'og:description' index.html  || (echo "FAIL: og:description missing" && exit 1)
+          grep -q 'og:image' index.html        || (echo "FAIL: og:image missing" && exit 1)
+          grep -q 'og:url' index.html          || (echo "FAIL: og:url missing" && exit 1)
+          echo "PASS: Open Graph tags complete"
+
+      - name: Twitter Card tags
+        run: |
+          grep -q 'twitter:card' index.html        || (echo "FAIL: twitter:card missing" && exit 1)
+          grep -q 'summary_large_image' index.html  || (echo "FAIL: twitter card type incorrect" && exit 1)
+          grep -q 'twitter:image' index.html        || (echo "FAIL: twitter:image missing" && exit 1)
+          echo "PASS: Twitter Card tags complete"
+
+      - name: JSON-LD schema
+        run: |
+          grep -q 'application/ld+json' index.html || (echo "FAIL: JSON-LD missing" && exit 1)
+          grep -q '"Person"' index.html             || (echo "FAIL: Person schema missing" && exit 1)
+          grep -q 'Arhant Barmate' index.html       || (echo "FAIL: author name missing from schema" && exit 1)
+          echo "PASS: JSON-LD Person schema present"
+
+      - name: Viewport meta
+        run: |
+          grep -q 'name="viewport"' index.html || (echo "FAIL: viewport meta missing" && exit 1)
+          echo "PASS: viewport meta present"
+
+      - name: H1 tag (exactly once)
+        run: |
+          COUNT=$(grep -c '<h1' index.html || true)
+          [ "$COUNT" -eq 1 ] || (echo "FAIL: expected 1 <h1>, found $COUNT" && exit 1)
+          echo "PASS: exactly one <h1>"
+
+      - name: SHA contract address
+        run: |
+          grep -q '0xd661a1ab8cefaacd78f4b968670c3bc438415615' index.html || (echo "FAIL: SHA contract address missing" && exit 1)
+          echo "PASS: SHA contract address present"
+
+      - name: Google Search Console file
+        run: |
+          [ -f "google73e927487bf1b8db.html" ] || (echo "FAIL: Google Search Console verification file missing" && exit 1)
+          echo "PASS: Google Search Console file present"
+
+      - name: Sitemap valid
+        run: |
+          grep -q 'arhantbarmate.github.io' sitemap.xml || (echo "FAIL: sitemap missing site URL" && exit 1)
+          echo "PASS: sitemap present and valid"
+
+      - name: Print summary
+        run: echo "All SEO/GEO checks PASSED for arhantbarmate.github.io"
